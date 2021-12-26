@@ -26,10 +26,10 @@ Font: **Jetbrains Mono patched with nerd fonts**
 
 Terminal: https://github.com/wez/wezterm
 
-## ⚙️ Setup
+## ⚙️  Installation
 
 ```viml
-Plug 'luisiacc/gruvbox-baby'
+Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
 ...
 colorscheme gruvbox-baby
 ```
