@@ -285,6 +285,8 @@ function M.setup(config)
     cppTSVariable = { fg = palette.milk, bg = palette.bg_light },
 
     -- Nvim Tree
+    NvimTreeNormal = { fg = palette.foreground, bg = palette.background_dark },
+    NvimTreeNormalNC = { fg = palette.foreground, bg = palette.background_dark },
     NvimTreeFolderIcon = { fg = palette.soft_yellow },
     NvimTreeRootFolder = { fg = palette.magenta },
 

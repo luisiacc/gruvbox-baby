@@ -1,4 +1,4 @@
-# Gruvbox baby!
+# 🎄 Gruvbox baby!
 
 Gruvbox theme with full support for treesitter and that looks nice!
 
