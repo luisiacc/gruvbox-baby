@@ -5,7 +5,7 @@ Gruvbox theme with full support for treesitter and that looks nice!
 
 ## Why?
 
-I wasn't conformed with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
+I wasn't confortable with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
 didn't like their colors.
 
 ## 📸 Pretty pictures
