@@ -27,7 +27,7 @@ local palette = {
 local M = {}
 
 function M.config(config)
-  config = config or require("gruvbox-ts.config")
+  config = config or require("gruvbox-baby.config")
   local background = config.background_color or palette.background
   local intensity_map = {
     ["dark"] = {

@@ -33,8 +33,8 @@ local M = {}
 -- end
 
 function M.setup(config)
-  config = config or require("gruvbox-ts.config")
-  local colors = require("gruvbox-ts.colors")
+  config = config or require("gruvbox-baby.config")
+  local colors = require("gruvbox-baby.colors")
   local c = colors.config(config)
 
   local theme = {}

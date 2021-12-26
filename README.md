@@ -29,14 +29,14 @@ Terminal: https://github.com/wez/wezterm
 ## ⚙️ Setup
 
 ```viml
-Plug 'luisiacc/gruvbox-ts'
+Plug 'luisiacc/gruvbox-baby'
 ...
-colorscheme gruvbox-ts
+colorscheme gruvbox-baby
 ```
 
 ## 🪛 Configuration
 
-> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-ts`
+> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-baby`
 
 
 | Option           | Default  | Available options  |
@@ -49,20 +49,20 @@ colorscheme gruvbox-ts
 
 ```lua
 -- Example config in Lua
-vim.g.gruvbox_ts_function_style = "NONE"
-vim.g.gruvbox_ts_keyword_style = "italic"
+vim.g.gruvbox_baby_function_style = "NONE"
+vim.g.gruvbox_baby_keyword_style = "italic"
 
 -- Load the colorscheme
-vim.cmd[[colorscheme gruvbox-ts]]
+vim.cmd[[colorscheme gruvbox-baby]]
 ```
 
 ```vim
 " Example config in VimScript
-let g:gruvbox_ts_function_style = "NONE"
-let g:gruvbox_ts_keyword_style = "italic"
+let g:gruvbox_baby_function_style = "NONE"
+let g:gruvbox_baby_keyword_style = "italic"
 
 " Load the colorscheme
-colorscheme gruvbox-ts
+colorscheme gruvbox-baby
 ```
 
 ## 🔌 Plugin support

@@ -52,7 +52,7 @@ function util.load(theme)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "gruvbox-ts"
+  vim.g.colors_name = "gruvbox-baby"
 
   -- load base theme
   util.syntax(theme.base)
