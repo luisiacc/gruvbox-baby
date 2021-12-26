@@ -4,7 +4,6 @@
 
 My variation of the gruvbox theme with full support for treesitter!
 
-
 ## Why?
 
 I wasn't confortable with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
@@ -27,10 +26,42 @@ Font: **Jetbrains Mono patched with nerd fonts**
 
 Terminal: https://github.com/wez/wezterm
 
-## ⚙️  Setup
+## ⚙️ Setup
+
 ```viml
 Plug 'luisiacc/gruvbox-ts'
 ...
+colorscheme gruvbox-ts
+```
+
+## 🪛 Configuration
+
+> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-ts`
+
+
+| Option           | Default  | Available options  |
+| ---------------- | -------- | ------------------ |
+| background_color | `medium` | `medium`, `dark`   |
+| comment_style    | `italic` | see `:h attr-list` |
+| keyword_style    | `italic` | see `:h attr-list` |
+| function_style   | `bold`   | see `:h attr-list` |
+| variable_style   | `NONE`   | see `:h attr-list` |
+
+```lua
+-- Example config in Lua
+vim.g.gruvbox_ts_function_style = "NONE"
+vim.g.gruvbox_ts_keyword_style = "italic"
+
+-- Load the colorscheme
+vim.cmd[[colorscheme gruvbox-ts]]
+```
+
+```vim
+" Example config in VimScript
+let g:gruvbox_ts_function_style = "NONE"
+let g:gruvbox_ts_keyword_style = "italic"
+
+" Load the colorscheme
 colorscheme gruvbox-ts
 ```
 
@@ -44,7 +75,7 @@ colorscheme gruvbox-ts
 - https://github.com/lukas-reineke/indent-blankline.nvim
 - https://github.com/hrsh7th/nvim-cmp
 
-## ☑️  TODO
+## ☑️ TODO
 
 - [ ] Add specification for background intensity
 
