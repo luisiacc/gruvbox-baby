@@ -2,6 +2,12 @@
 
 Gruvbox theme with full support for treesitter and that looks nice!
 
+
+## Why?
+
+I wasn't conformed with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
+didn't like their colors.
+
 Lua example
 ![image](https://user-images.githubusercontent.com/31720261/147399333-5dc8d3dc-b382-4f13-a047-fb99298af028.png)
 Python example
