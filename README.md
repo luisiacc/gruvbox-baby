@@ -15,7 +15,7 @@ Font: **Jetbrains Mono patched with nerd fonts**
 
 Terminal: https://github.com/wez/wezterm
 
-## ⚙️ Setup
+## ⚙️  Setup
 ```viml
 Plug 'luisiacc/gruvbox-ts'
 ...
@@ -24,13 +24,15 @@ colorscheme gruvbox-ts
 
 ## 🔌 Plugin support
 
-- Startify
-- Treesitter
+- startify
+- treesitter
 - coc.nvim
-- Nvim-tree
-- Hop
+- nvim-tree
+- hop.nvim
+- indent-blankline
+- nvim-cmp
 
-## ☑️ TODO
+## ☑️  TODO
 
 - [ ] Add specification for background intensity
 - [ ] Lualine theme

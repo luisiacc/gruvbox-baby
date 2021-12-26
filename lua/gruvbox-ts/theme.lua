@@ -21,7 +21,7 @@ local palette = {
   forest_green = "#689d6a",
   clean_green = "#8ec07c",
   milk = "#E7D7AD",
-  NONE = "NONE",
+  none = "NONE",
 }
 
 local M = {}
@@ -308,6 +308,44 @@ function M.setup(config)
     IndentBlanklineContextChar = { fg = "#365050" },
 
     FloatBorder = { bg = palette.background_dark },
+    -- Cmp
+    CmpDocumentation = { fg = palette.foreground, bg = palette.bg_float },
+    CmpDocumentationBorder = { fg = palette.medium_gray, bg = palette.bg_float },
+
+    CmpItemAbbr = { fg = palette.foreground, bg = palette.none },
+    CmpItemAbbrDeprecated = { fg = palette.milk, bg = palette.none, style = "strikethrough" },
+    CmpItemAbbrMatch = { fg = palette.light_blue, bg = palette.none },
+    CmpItemAbbrMatchFuzzy = { fg = palette.light_blue, bg = palette.none },
+
+    CmpItemKindDefault = { fg = palette.dark_gray, bg = palette.none },
+    CmpItemMenu = { fg = palette.comment, bg = palette.none },
+
+    CmpItemKindKeyword = { fg = palette.blue_gray, bg = palette.none },
+
+    CmpItemKindVariable = { fg = palette.magenta, bg = palette.none },
+    CmpItemKindConstant = { fg = palette.magenta, bg = palette.none },
+    CmpItemKindReference = { fg = palette.magenta, bg = palette.none },
+    CmpItemKindValue = { fg = palette.magenta, bg = palette.none },
+
+    CmpItemKindFunction = { fg = palette.orange, bg = palette.none },
+    CmpItemKindMethod = { fg = palette.orange, bg = palette.none },
+    CmpItemKindConstructor = { fg = palette.orange, bg = palette.none },
+
+    CmpItemKindClass = { fg = palette.pink, bg = palette.none },
+    CmpItemKindInterface = { fg = palette.pink, bg = palette.none },
+    CmpItemKindStruct = { fg = palette.pink, bg = palette.none },
+    CmpItemKindEvent = { fg = palette.pink, bg = palette.none },
+    CmpItemKindEnum = { fg = palette.pink, bg = palette.none },
+    CmpItemKindUnit = { fg = palette.pink, bg = palette.none },
+
+    CmpItemKindModule = { fg = palette.soft_yellow, bg = palette.none },
+
+    CmpItemKindProperty = { fg = palette.forest_green, bg = palette.none },
+    CmpItemKindField = { fg = palette.forest_green, bg = palette.none },
+    CmpItemKindTypeParameter = { fg = palette.forest_green, bg = palette.none },
+    CmpItemKindEnumMember = { fg = palette.forest_green, bg = palette.none },
+    CmpItemKindOperator = { fg = palette.forest_green, bg = palette.none },
+    CmpItemKindSnippet = { fg = palette.gray, bg = palette.none },
   }
   return theme
 end
