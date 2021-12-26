@@ -1,3 +1,5 @@
+![qwe](https://user-images.githubusercontent.com/31720261/147401091-2dfe5af9-1984-4470-8394-243953268dc5.png)
+
 # 🎄 Gruvbox baby!
 
 Gruvbox theme with full support for treesitter and that looks nice!
