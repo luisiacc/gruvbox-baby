@@ -34,3 +34,9 @@ colorscheme gruvbox-ts
 
 - [ ] Add specification for background intensity
 - [ ] Lualine theme
+
+
+## Aknowledgments
+
+- I based my structure on https://github.com/folke/tokyonight.nvim (and also copied some of it)
+- The all father 👴 https://github.com/morhetz/gruvbox
