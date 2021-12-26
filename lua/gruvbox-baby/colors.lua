@@ -23,6 +23,13 @@ local palette = {
   milk = "#E7D7AD",
   none = "NONE",
 }
+-- these are backgrounds
+palette.diff = {
+  add = "#26332c",
+  change = "#273842",
+  delete = "#572E33",
+  text = "#314753",
+}
 
 local M = {}
 

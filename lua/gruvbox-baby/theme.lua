@@ -1,29 +1,3 @@
-local palette = {
-  dark = "#202020",
-  foreground = "#ebdbb2",
-  background = "#282828",
-  background_dark = "#242424",
-  bg_light = "#32302f",
-  comment = "#665c54",
-  gray = "#DEDEDE",
-  soft_yellow = "#EEBD35",
-  soft_green = "#98971a",
-  bright_yellow = "#fabd2f",
-  orange = "#d65d0e",
-  red = "#fb4934",
-  error_red = "#cc241d",
-  magenta = "#b16286",
-  pink = "#D4879C",
-  light_blue = "#7fa2ac",
-  dark_gray = "#83a598",
-  medium_gray = "#504945",
-  blue_gray = "#458588",
-  forest_green = "#689d6a",
-  clean_green = "#8ec07c",
-  milk = "#E7D7AD",
-  none = "NONE",
-}
-
 local M = {}
 
 -- local _debug = function(content)
@@ -76,10 +50,12 @@ function M.setup(config)
     debugPc = { bg = c.error_red },
     Conceal = { fg = c.comment },
     Directory = { fg = c.dark_gray },
-    DiffAdd = { fg = c.background, bg = c.soft_yellow },
-    DiffChange = { fg = c.soft_yellow, style = "underline" },
-    DiffDelete = { fg = c.background, bg = c.error_red },
-    DiffText = { fg = c.background, bg = c.soft_yellow },
+
+    DiffAdd = { bg = c.diff.add },
+    DiffChange = { style = "NONE", bg = c.diff.change },
+    DiffDelete = { bg = c.diff.delete },
+    DiffText = { bg = c.diff.text },
+
     ErrorMsg = { fg = c.red },
     VertSplit = { fg = c.bg_light },
     Folded = { fg = c.comment },
@@ -253,8 +229,8 @@ function M.setup(config)
     WhichKeyGroup = { fg = c.orange },
     WhichKeyDesc = { fg = c.forest_green },
 
-    diffAdded = { fg = c.soft_yellow },
-    diffRemoved = { fg = c.orange },
+    diffAdded = { fg = c.diff.add },
+    diffRemoved = { fg = c.diff.delete },
     diffFileId = { fg = c.blue_gray, style = "bold" },
     diffFile = { fg = c.comment },
     diffNewFile = { fg = c.soft_yellow },
