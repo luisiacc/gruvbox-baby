@@ -31,6 +31,7 @@ function M.config(config)
   local background = config.background_color or palette.background
   local intensity_map = {
     ["dark"] = {
+      dark = "#161616",
       background = "#202020",
       background_dark = "#161616",
     },
