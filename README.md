@@ -24,7 +24,7 @@ colorscheme gruvbox-ts
 
 ## 🔌 Plugin support
 
-Startify
+- Startify
 - Treesitter
 - coc.nvim
 - Nvim-tree

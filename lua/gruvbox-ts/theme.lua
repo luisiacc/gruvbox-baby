@@ -288,7 +288,7 @@ function M.setup(config)
     NvimTreeNormal = { fg = palette.foreground, bg = palette.background_dark },
     NvimTreeNormalNC = { fg = palette.foreground, bg = palette.background_dark },
     NvimTreeFolderIcon = { fg = palette.soft_yellow },
-    NvimTreeRootFolder = { fg = palette.magenta },
+    NvimTreeRootFolder = { fg = palette.magenta, style = "bold" },
 
     NvimTreeGitDirty = { fg = palette.red },
     NvimTreeGitStaged = { fg = palette.foreground },
@@ -298,8 +298,8 @@ function M.setup(config)
     NvimTreeGitDeleted = { fg = palette.red },
 
     -- Hop
-    HopNextKey = { fg = palette.milk, bg = palette.dark },
-    HopNextKey1 = { fg = palette.milk, bg = palette.dark },
+    HopNextKey = { fg = palette.soft_yellow, bg = palette.dark, style = "bold" },
+    HopNextKey1 = { fg = palette.soft_yellow, bg = palette.dark, style = "bold" },
     HopNextKey2 = { fg = palette.milk, bg = palette.dark },
 
     -- indent blankline
