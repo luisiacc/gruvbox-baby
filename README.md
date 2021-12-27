@@ -85,5 +85,6 @@ colorscheme gruvbox-baby
 
 ## Aknowledgments
 
+- Shutout to @ThePrimeagen for the inspiration for the plugin name, Gruvbox baby!
 - I based my structure on https://github.com/folke/tokyonight.nvim (and also copied some of it)
 - The all father 👴 https://github.com/morhetz/gruvbox
