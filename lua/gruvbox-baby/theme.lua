@@ -52,7 +52,7 @@ function M.setup(config)
     Directory = { fg = c.dark_gray },
 
     DiffAdd = { bg = c.diff.add },
-    DiffChange = { style = "NONE", bg = c.diff.change },
+    DiffChange = { bg = c.diff.change },
     DiffDelete = { bg = c.diff.delete },
     DiffText = { bg = c.diff.text },
 
@@ -229,9 +229,9 @@ function M.setup(config)
     WhichKeyGroup = { fg = c.orange },
     WhichKeyDesc = { fg = c.forest_green },
 
-    diffAdded = { fg = c.diff.add },
-    diffRemoved = { fg = c.diff.delete },
-    diffFileId = { fg = c.blue_gray, style = "bold" },
+    diffAdded = { fg = c.forest_green },
+    diffRemoved = { fg = c.red },
+    diffFileId = { fg = c.magenta },
     diffFile = { fg = c.comment },
     diffNewFile = { fg = c.soft_yellow },
     diffOldFile = { fg = c.orange },
