@@ -259,7 +259,7 @@ function M.setup(config)
 
     ColorColumn = { bg = c.background_dark },
     SignColumn = { bg = c.background },
-    CursorColumn = { bg = c.background },
+    CursorColumn = { bg = c.bg_light },
     CursorLine = { bg = c.bg_light },
     FoldColumn = { fg = c.NONE },
     PmenuSbar = { bg = c.comment },
