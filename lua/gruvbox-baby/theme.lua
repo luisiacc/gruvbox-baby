@@ -267,7 +267,7 @@ function M.setup(config)
     EasyMotionShade = { fg = c.NONE },
     TabLineFill = { bg = c.background },
     Visual = { bg = c.medium_gray },
-    Cursor = { bg = c.NONE, style = "reverse" },
+    Cursor = { bg = c.soft_green, fg = c.background },
 
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray, bg = c.bg_light },
