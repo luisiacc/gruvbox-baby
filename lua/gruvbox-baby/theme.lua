@@ -337,6 +337,39 @@ function M.setup(config)
     CmpItemKindEnumMember = { fg = c.forest_green, bg = c.none },
     CmpItemKindOperator = { fg = c.forest_green, bg = c.none },
     CmpItemKindSnippet = { fg = c.gray, bg = c.none },
+
+    -- Mutt-Mail:
+    --
+    -- header and subject parts
+    mailHeader = { fg = c.red },
+    mailHeaderKey = { fg = c.red },
+    mailHeaderEmail = { fg = c.magenta },
+    mailSubject = { fg = c.forest_green, style = "italic" },
+
+    --quoted text in mails
+    mailQuoted1 = { fg = c.clean_green },
+    mailQuoted2 = { fg = c.light_blue },
+    mailQuoted3 = { fg = c.blue_gray },
+    mailQuoted4 = { fg = c.pink },
+    mailQuoted5 = { fg = c.soft_green },
+    mailQuoted6 = { fg = c.orange },
+
+    --quoted text in mails
+    mailQuotedExp1 = { fg = c.milk },
+    mailQuotedExp2 = { fg = c.light_blue },
+    mailQuotedExp3 = { fg = c.blue_gray },
+    mailQuotedExp4 = { fg = c.pink },
+    mailQuotedExp5 = { fg = c.soft_green },
+    mailQuotedExp6 = { fg = c.orange },
+
+    -- did not discover yet for what this is used: mailVerbatim
+
+    -- mail signature
+    mailSignature = { fg = c.comment },
+
+    -- mail url and emails
+    mailURL = { fg = c.orange, style = "underline" },
+    mailEmail = { fg = c.soft_yellow },
   }
   return theme
 end
