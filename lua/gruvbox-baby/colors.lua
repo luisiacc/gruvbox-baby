@@ -35,7 +35,6 @@ local M = {}
 
 function M.config(config)
   config = config or require("gruvbox-baby.config")
-  local background = config.background_color or palette.background
   local intensity_map = {
     ["dark"] = {
       dark = "#161616",
@@ -49,6 +48,7 @@ function M.config(config)
   }
 
   local colors = palette
+  local background = config.background_color or palette.background
   if intensity_map[background] then
     colors = vim.tbl_extend("force", colors, intensity_map[background])
   end

@@ -2,7 +2,7 @@ local M = {}
 
 -- local _debug = function(content)
 --   local f = io.open("/home/acc/.nvim.debug.log", "a")
---   f:write(content .. "\n")
+--   f:write(vim.inspect(content) .. "\n")
 --   f.close()
 -- end
 
@@ -371,6 +371,8 @@ function M.setup(config)
     mailURL = { fg = c.orange, style = "underline" },
     mailEmail = { fg = c.soft_yellow },
   }
+
+  theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
   return theme
 end
 

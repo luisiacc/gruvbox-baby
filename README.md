@@ -26,9 +26,9 @@ Font: **Jetbrains Mono patched with nerd fonts**
 
 Terminal: https://github.com/wez/wezterm
 
-## ⚙️  Installation
+## ⚙️ Installation
 
-```viml
+```vim
 Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
 ...
 colorscheme gruvbox-baby
@@ -38,19 +38,25 @@ colorscheme gruvbox-baby
 
 > ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-baby`
 
-
-| Option           | Default  | Available options  |
-| ---------------- | -------- | ------------------ |
-| background_color | `medium` | `medium`, `dark`   |
-| comment_style    | `italic` | see `:h attr-list` |
-| keyword_style    | `italic` | see `:h attr-list` |
-| function_style   | `bold`   | see `:h attr-list` |
-| variable_style   | `NONE`   | see `:h attr-list` |
+| Option           | Default  | Available options                           |
+| ---------------- | -------- | ------------------------------------------- |
+| background_color | `medium` | `medium`, `dark`                            |
+| comment_style    | `italic` | see `:h attr-list`                          |
+| keyword_style    | `italic` | see `:h attr-list`                          |
+| function_style   | `bold`   | see `:h attr-list`                          |
+| variable_style   | `NONE`   | see `:h attr-list`                          |
+| hightlights      | `{}`     | override highlights with your custom colors |
 
 ```lua
 -- Example config in Lua
 vim.g.gruvbox_baby_function_style = "NONE"
 vim.g.gruvbox_baby_keyword_style = "italic"
+
+-- Each highlight group must follow the structure:
+-- ColorGroup = {fg = "foreground color", bg = "background_color", style = "some_style(:h attr-list)"}
+-- See also :h highlight-guifg
+-- Example:
+vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
 
 -- Load the colorscheme
 vim.cmd[[colorscheme gruvbox-baby]]
@@ -63,6 +69,12 @@ let g:gruvbox_baby_keyword_style = "italic"
 
 " Load the colorscheme
 colorscheme gruvbox-baby
+```
+
+If you want access to the palette you have to:
+```lua
+local colors = require("gruvbox-baby.colors").config()
+vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 ```
 
 ## 🔌 Plugin support

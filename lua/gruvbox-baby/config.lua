@@ -20,6 +20,7 @@ config = {
   keyword_style = opt("keyword_style", "italic"),
   function_style = opt("function_style", "bold"),
   variable_style = opt("variable_style", "NONE"),
+  highlights = opt("highlights", {}),
 }
 
 return config
