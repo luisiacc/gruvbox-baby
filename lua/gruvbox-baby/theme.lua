@@ -339,14 +339,11 @@ function M.setup(config)
     CmpItemKindSnippet = { fg = c.gray, bg = c.none },
 
     -- Mutt-Mail:
-    --
-    -- header and subject parts
     mailHeader = { fg = c.red },
     mailHeaderKey = { fg = c.red },
     mailHeaderEmail = { fg = c.magenta },
     mailSubject = { fg = c.forest_green, style = "italic" },
 
-    --quoted text in mails
     mailQuoted1 = { fg = c.clean_green },
     mailQuoted2 = { fg = c.light_blue },
     mailQuoted3 = { fg = c.blue_gray },
@@ -354,7 +351,6 @@ function M.setup(config)
     mailQuoted5 = { fg = c.soft_green },
     mailQuoted6 = { fg = c.orange },
 
-    --quoted text in mails
     mailQuotedExp1 = { fg = c.milk },
     mailQuotedExp2 = { fg = c.light_blue },
     mailQuotedExp3 = { fg = c.blue_gray },
@@ -362,14 +358,23 @@ function M.setup(config)
     mailQuotedExp5 = { fg = c.soft_green },
     mailQuotedExp6 = { fg = c.orange },
 
-    -- did not discover yet for what this is used: mailVerbatim
-
-    -- mail signature
     mailSignature = { fg = c.comment },
-
-    -- mail url and emails
     mailURL = { fg = c.orange, style = "underline" },
     mailEmail = { fg = c.soft_yellow },
+
+    -- Telescope
+    TelescopeBorder = { fg = c.dark, bg = c.dark },
+    TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
+    TelescopePromptNormal = { fg = milk, bg = c.medium_gray },
+    TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
+
+    TelescopeNormal = { bg = c.dark },
+
+    TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
+    TelescopePromptTitle = { fg = milk, bg = c.soft_yellow },
+    TelescopeResultsTitle = { fg = c.dark, bg = c.dark },
+
+    TelescopeSelection = { bg = c.diff.change },
   }
 
   theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
