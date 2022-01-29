@@ -20,6 +20,9 @@ Python example
 React with typescript example
 ![react-typescript-example](https://user-images.githubusercontent.com/31720261/147399581-66030749-3fa2-466d-aa8a-e79b6181185c.png)
 
+Telescope theme inspired by https://github.com/NvChad/NvChad
+![telescope-theme](https://user-images.githubusercontent.com/31720261/151669762-1470aa12-b6ff-47c1-a4e9-ec9b37e0eabe.png)
+
 #### Data from images:
 
 Font: **Jetbrains Mono patched with nerd fonts**
@@ -86,6 +89,7 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 - https://github.com/phaazon/hop.nvim
 - https://github.com/lukas-reineke/indent-blankline.nvim
 - https://github.com/hrsh7th/nvim-cmp
+- https://github.com/nvim-telescope/telescope.nvim
 
 ## ☑️ TODO
 
