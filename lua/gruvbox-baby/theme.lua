@@ -365,13 +365,13 @@ function M.setup(config)
     -- Telescope
     TelescopeBorder = { fg = c.dark, bg = c.dark },
     TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
-    TelescopePromptNormal = { fg = milk, bg = c.medium_gray },
+    TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
     TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
 
     TelescopeNormal = { bg = c.dark },
 
     TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
-    TelescopePromptTitle = { fg = milk, bg = c.soft_yellow },
+    TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
     TelescopeResultsTitle = { fg = c.dark, bg = c.dark },
 
     TelescopeSelection = { bg = c.diff.change },
