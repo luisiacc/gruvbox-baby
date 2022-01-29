@@ -294,8 +294,8 @@ function M.setup(config)
     HopNextKey2 = { fg = c.milk, bg = c.dark },
 
     -- indent blankline
-    IndentBlanklineChar = { guifg = "#313131" },
-    IndentBlanklineSpaceChar = { guifg = "#313131" },
+    IndentBlanklineChar = { fg = "#313131" },
+    IndentBlanklineSpaceChar = { fg = "#313131" },
     IndentBlanklineContextChar = { fg = "#365050" },
 
     FloatBorder = { bg = c.background_dark },
