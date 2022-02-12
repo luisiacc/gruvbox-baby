@@ -12,6 +12,7 @@ function M.setup(config)
   local c = colors.config(config)
 
   local theme = {}
+  theme.defer = {}
   theme.base = {
     NormalFloat = { fg = c.foreground, bg = c.background_dark },
     Normal = { fg = c.foreground, bg = c.background },
