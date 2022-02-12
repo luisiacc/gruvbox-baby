@@ -56,6 +56,10 @@ function util.load(theme)
 
   -- load base theme
   util.syntax(theme.base)
+
+  vim.defer_fn(function()
+    util.syntax(theme.defer)
+  end, 100)
 end
 
 return util
