@@ -20,7 +20,7 @@ Python example
 React with typescript example
 ![react-typescript-example](https://user-images.githubusercontent.com/31720261/147399581-66030749-3fa2-466d-aa8a-e79b6181185c.png)
 
-Telescope theme inspired by https://github.com/NvChad/NvChad
+Telescope theme inspired by https://github.com/NvChad/NvChad (You have to enable it via config variable)
 ![telescope-theme](https://user-images.githubusercontent.com/31720261/151669762-1470aa12-b6ff-47c1-a4e9-ec9b37e0eabe.png)
 
 #### Data from images:
@@ -61,6 +61,9 @@ vim.g.gruvbox_baby_keyword_style = "italic"
 -- Example:
 vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
 
+-- Enable telescope theme
+vim.g.gruvbox_baby_telescope_theme = 1
+
 -- Load the colorscheme
 vim.cmd[[colorscheme gruvbox-baby]]
 ```
@@ -70,11 +73,14 @@ vim.cmd[[colorscheme gruvbox-baby]]
 let g:gruvbox_baby_function_style = "NONE"
 let g:gruvbox_baby_keyword_style = "italic"
 
+" Enable telescope theme
+let g:gruvbox_baby_telescope_theme = 1
+
 " Load the colorscheme
 colorscheme gruvbox-baby
 ```
 
-If you want access to the palette you have to:
+If you want access to the palette you have to do this:
 ```lua
 local colors = require("gruvbox-baby.colors").config()
 vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}

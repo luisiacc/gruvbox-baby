@@ -361,21 +361,25 @@ function M.setup(config)
     mailSignature = { fg = c.comment },
     mailURL = { fg = c.orange, style = "underline" },
     mailEmail = { fg = c.soft_yellow },
-
-    -- Telescope
-    TelescopeBorder = { fg = c.dark, bg = c.dark },
-    TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
-    TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
-    TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
-
-    TelescopeNormal = { bg = c.dark },
-
-    TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
-    TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
-    TelescopeResultsTitle = { fg = c.dark, bg = c.dark },
-
-    TelescopeSelection = { bg = c.diff.change },
   }
+
+  if config.telescope_theme then
+    theme.base = vim.tbl_extend("force", theme.base, {
+      -- Telescope
+      TelescopeBorder = { fg = c.dark, bg = c.dark },
+      TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
+      TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
+      TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
+
+      TelescopeNormal = { bg = c.dark },
+
+      TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
+      TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
+      TelescopeResultsTitle = { fg = c.dark, bg = c.dark },
+
+      TelescopeSelection = { bg = c.diff.change },
+    })
+  end
 
   theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
   return theme

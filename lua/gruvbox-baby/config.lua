@@ -21,6 +21,7 @@ config = {
   function_style = opt("function_style", "bold"),
   variable_style = opt("variable_style", "NONE"),
   highlights = opt("highlights", {}),
+  telescope_theme = opt("telescope_theme", false),
 }
 
 return config
