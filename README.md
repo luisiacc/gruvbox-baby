@@ -41,14 +41,15 @@ colorscheme gruvbox-baby
 
 > ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-baby`
 
-| Option           | Default  | Available options                           |
-| ---------------- | -------- | ------------------------------------------- |
-| background_color | `medium` | `medium`, `dark`                            |
-| comment_style    | `italic` | see `:h attr-list`                          |
-| keyword_style    | `italic` | see `:h attr-list`                          |
-| function_style   | `bold`   | see `:h attr-list`                          |
-| variable_style   | `NONE`   | see `:h attr-list`                          |
-| hightlights      | `{}`     | override highlights with your custom colors |
+| Option           | Default  | Available options                                |
+| ---------------- | -------- | -------------------------------------------------|
+| background_color | `medium` | `medium`, `dark`                                 |
+| transparent_mode | `false`  | `false`, `true` - sets background colors to None |
+| comment_style    | `italic` | see `:h attr-list`                               |
+| keyword_style    | `italic` | see `:h attr-list`                               |
+| function_style   | `bold`   | see `:h attr-list`                               |
+| variable_style   | `NONE`   | see `:h attr-list`                               |
+| hightlights      | `{}`     | override highlights with your custom colors      |
 
 ```lua
 -- Example config in Lua
@@ -64,6 +65,9 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="u
 -- Enable telescope theme
 vim.g.gruvbox_baby_telescope_theme = 1
 
+-- Enable transparent mode
+vim.g.gruvbox_baby_transparent_mode = 1
+
 -- Load the colorscheme
 vim.cmd[[colorscheme gruvbox-baby]]
 ```
@@ -75,6 +79,9 @@ let g:gruvbox_baby_keyword_style = "italic"
 
 " Enable telescope theme
 let g:gruvbox_baby_telescope_theme = 1
+
+" Enable transparent mode
+let g:gruvbox_baby_transparent_mode = 1
 
 " Load the colorscheme
 colorscheme gruvbox-baby
@@ -96,7 +103,21 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 - https://github.com/lukas-reineke/indent-blankline.nvim
 - https://github.com/hrsh7th/nvim-cmp
 - https://github.com/nvim-telescope/telescope.nvim
+- https://github.com/nvim-lualine/lualine.nvim
 
+### To enable Lualine
+
+To enable `gruvbox-baby` theme for `Lualine`, simply specify it in your lualine settings:
+
+```
+require('lualine').setup {
+    options = {
+        -- ... your lualine config,
+        theme = "gruvbox-baby",
+        -- ... your lualine config,
+    }
+}
+```
 ## ☑️ TODO
 
 - [ ] Add specification for background intensity

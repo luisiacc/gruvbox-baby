@@ -53,6 +53,13 @@ function M.config(config)
     colors = vim.tbl_extend("force", colors, intensity_map[background])
   end
 
+  if config.transparent_mode then
+    transparent = {
+        background = palette.none,
+        background_dark = palette.none
+    }
+    colors = vim.tbl_extend("force", colors, { background = palette.none, background_dark = palette.none })
+  end
   return colors
 end
 
