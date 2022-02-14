@@ -22,6 +22,7 @@ config = {
   variable_style = opt("variable_style", "NONE"),
   highlights = opt("highlights", {}),
   telescope_theme = opt("telescope_theme", false),
+  transparent_mode = opt("transparent_mode", false)
 }
 
 return config

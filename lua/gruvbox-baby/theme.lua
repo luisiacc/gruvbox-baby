@@ -366,16 +366,16 @@ function M.setup(config)
   if config.telescope_theme then
     theme.base = vim.tbl_extend("force", theme.base, {
       -- Telescope
-      TelescopeBorder = { fg = c.dark, bg = c.dark },
+      TelescopeBorder = { fg = c.background_dark, bg = c.background_dark },
       TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
       TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
       TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
 
-      TelescopeNormal = { bg = c.dark },
+      TelescopeNormal = { bg = c.background_dark },
 
       TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
       TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
-      TelescopeResultsTitle = { fg = c.dark, bg = c.dark },
+      TelescopeResultsTitle = { fg = c.background_dark, bg = c.milk },
 
       TelescopeSelection = { bg = c.diff.change },
     })
