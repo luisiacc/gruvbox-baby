@@ -105,6 +105,37 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 
 ![gruvbox palette](https://user-images.githubusercontent.com/31720261/147415431-13f6c6af-2f76-46c9-8448-20c71e359fc5.png)
 
+```
+dark = "#202020",
+foreground = "#ebdbb2",
+background = "#282828",
+background_dark = "#242424",
+bg_light = "#32302f",
+medium_gray = "#504945",
+comment = "#665c54",
+gray = "#DEDEDE",
+soft_yellow = "#EEBD35",
+soft_green = "#98971a",
+bright_yellow = "#fabd2f",
+orange = "#d65d0e",
+red = "#fb4934",
+error_red = "#cc241d",
+magenta = "#b16286",
+pink = "#D4879C",
+light_blue = "#7fa2ac",
+dark_gray = "#83a598",
+blue_gray = "#458588",
+forest_green = "#689d6a",
+clean_green = "#8ec07c",
+milk = "#E7D7AD",
+
+-- Dark theme changes colors to
+["dark"] = {
+      dark = "#161616",
+      background = "#202020",
+      background_dark = "#161616",
+    },
+```
 ## Aknowledgments
 
 - Shutout to @ThePrimeagen for the inspiration for the plugin name, Gruvbox baby!
