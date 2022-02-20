@@ -271,9 +271,9 @@ function M.setup(config)
     Cursor = { bg = c.soft_green, fg = c.background },
 
     -- mix
-    GitSignsCurrentLineBlame = { fg = c.medium_gray, bg = c.bg_light },
+    GitSignsCurrentLineBlame = { fg = c.medium_gray },
     Underlined = { fg = c.error_red, style = "underline" },
-    cppTSVariable = { fg = c.milk, bg = c.bg_light },
+    cppTSVariable = { fg = c.milk },
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },
