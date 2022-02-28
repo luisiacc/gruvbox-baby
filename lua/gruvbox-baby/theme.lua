@@ -52,6 +52,10 @@ function M.setup(config)
     Conceal = { fg = c.comment },
     Directory = { fg = c.dark_gray },
 
+    TabLine = { bg = c.dark, fg = c.foreground }, -- tab pages line, not active tab page label
+    TabLineFill = { bg = c.background }, -- tab pages line, where there are no labels
+    TabLineSel = { fg = c.dark, bg = c.foreground }, -- tab pages line, active tab page label
+
     DiffAdd = { bg = c.diff.add },
     DiffChange = { bg = c.diff.change },
     DiffDelete = { bg = c.diff.delete },
@@ -78,8 +82,6 @@ function M.setup(config)
     StatusLineNC = { fg = c.comment },
     StatusLineTerm = { fg = c.foreground, bg = c.medium_gray },
     StatusLineTermNC = { fg = c.medium_gray },
-    TabLine = { fg = c.comment },
-    TabLineSel = { fg = c.foreground },
     Terminal = { fg = c.foreground, bg = c.background },
     VisualNOS = { fg = c.medium_gray },
     WarningMsg = { fg = c.soft_yellow },
@@ -266,7 +268,6 @@ function M.setup(config)
     PmenuSbar = { bg = c.comment },
     PmenuThumb = { bg = c.foreground },
     EasyMotionShade = { fg = c.NONE },
-    TabLineFill = { bg = c.background },
     Visual = { bg = c.medium_gray },
     Cursor = { bg = c.soft_green, fg = c.background },
 
