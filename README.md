@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/31720261/147401091-2dfe5af9-1984-4470-8394-243953268dc5.png)
+![logo](https://user-images.githubusercontent.com/31720261/156893394-a14a7fee-749c-4d02-8bfd-1a4cb2c479dd.png)
 
 # 🎄 Gruvbox baby!
 
