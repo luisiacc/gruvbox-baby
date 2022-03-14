@@ -122,10 +122,6 @@ require('lualine').setup {
 
 To enable `gruvbox-baby` theme for `iTerm2`, download the gruvbox-baby.itermcolors file in the colors directory and import it into iTerm2 colors.
 
-## ☑️ TOD
-
-- [ ] Add specification for background intensity
-
 ## Palette
 
 ![gruvbox palette](https://user-images.githubusercontent.com/31720261/147415431-13f6c6af-2f76-46c9-8448-20c71e359fc5.png)
