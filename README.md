@@ -118,7 +118,7 @@ require('lualine').setup {
     }
 }
 ```
-### 👽 Extras
+## 👽 Extras
 
 Extra color configs for **iTerm2** can be found on [extras](extras/)
 
