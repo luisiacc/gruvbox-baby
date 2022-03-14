@@ -118,9 +118,9 @@ require('lualine').setup {
     }
 }
 ```
-### To enable iTerm2
+### 👽 Extras
 
-To enable `gruvbox-baby` theme for `iTerm2`, download the gruvbox-baby.itermcolors file in the colors directory and import it into iTerm2 colors.
+Extra color configs for **iTerm2** can be found on [extras](extras/)
 
 ## Palette
 
