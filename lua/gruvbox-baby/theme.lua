@@ -107,7 +107,7 @@ function M.setup(config)
     TSMethod = { fg = c.soft_yellow, style = config.function_style },
     TSField = { fg = c.light_blue },
     TSProperty = { fg = c.blue_gray },
-    TSConstructor = { fg = c.clean_green },
+    TSConstructor = { fg = c.clean_green, style = "nocombine" },
     TSConditional = { fg = c.red },
     TSRepeat = { fg = c.red },
     TSLabel = { fg = c.blue_gray },
