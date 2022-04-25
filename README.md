@@ -6,7 +6,7 @@ My variation of the gruvbox theme with full support for treesitter!
 
 ## Why?
 
-I wasn't confortable with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
+I wasn't comfortable with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
 didn't like their colors on python and javascript/typescript files.
 
 ## 📸 Pretty pictures
