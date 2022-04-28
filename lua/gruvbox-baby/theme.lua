@@ -370,6 +370,7 @@ function M.setup(config)
     theme.base = vim.tbl_extend("force", theme.base, {
       -- Telescope
       TelescopeBorder = { fg = c.background_dark, bg = c.background_dark },
+      TelescopePromptCounter = { fg = c.milk, bg = c.medium_gray },
       TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
       TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
       TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
