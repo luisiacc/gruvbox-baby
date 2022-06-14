@@ -49,7 +49,7 @@ colorscheme gruvbox-baby
 | keyword_style    | `italic` | see `:h attr-list`                               |
 | function_style   | `bold`   | see `:h attr-list`                               |
 | variable_style   | `NONE`   | see `:h attr-list`                               |
-| hightlights      | `{}`     | override highlights with your custom colors      |
+| highlights      | `{}`     | override highlights with your custom colors      |
 
 ```lua
 -- Example config in Lua
