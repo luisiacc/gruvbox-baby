@@ -24,18 +24,26 @@ function util.highlight(group, color)
   local bg = color.bg and "guibg=" .. util.getColor(color.bg) or "guibg=NONE"
   local sp = color.sp and "guisp=" .. util.getColor(color.sp) or ""
 
-  local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
+  -- local hl = "hi! " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
 
   if color.link then
     vim.cmd("highlight! link " .. group .. " " .. color.link)
   else
-    -- local data = {}
-    -- if color.fg then data.foreground = color.fg end
-    -- if color.bg then data.background = color.bg end
-    -- if color.sp then data.special = color.sp end
-    -- if color.style then data[color.style] = true end
-    -- vim.api.nvim_set_hl(ns, group, data)
-    vim.cmd(hl)
+    local data = {}
+    if color.fg then
+      data.fg = color.fg
+    end
+    if color.bg then
+      data.bg = color.bg
+    end
+    if color.sp then
+      data.sp = color.sp
+    end
+    if color.style and not (color.style == "NONE") then
+      data[color.style] = true
+    end
+    vim.api.nvim_set_hl(0, group, data)
+    -- vim.cmd(hl)
   end
 end
 
