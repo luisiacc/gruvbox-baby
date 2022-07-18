@@ -89,7 +89,6 @@ function M.setup(config)
     EndOfBuffer = { fg = c.background },
 
     -- Tree Sitter
-    TSAttribute = { fg = c.foreground },
     TSBoolean = { fg = c.orange },
     TSDefine = { fg = c.red },
     TSComment = { fg = c.comment, style = config.comment_style },
@@ -115,7 +114,7 @@ function M.setup(config)
     TSRepeat = { fg = c.red },
     TSLabel = { fg = c.blue_gray },
     TSKeyword = { fg = c.red, style = config.keyword_style },
-    TSKeywordReturn = { fg = c.red, style = config.keyword_style },
+    -- TSKeywordReturn = { fg = c.red, style = config.keyword_style },
     TSKeywordFunction = { fg = c.red, style = config.keyword_style },
     TSKeywordOperator = { fg = c.red },
     TSOperator = { fg = c.foreground },
