@@ -19,13 +19,6 @@ function util.highlight(group, color)
     util.colorsUsed[color.sp] = true
   end
 
-  local style = color.style and "gui=" .. color.style or "gui=NONE"
-  local fg = color.fg and "guifg=" .. util.getColor(color.fg) or "guifg=NONE"
-  local bg = color.bg and "guibg=" .. util.getColor(color.bg) or "guibg=NONE"
-  local sp = color.sp and "guisp=" .. util.getColor(color.sp) or ""
-
-  -- local hl = "hi! " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
-
   if color.link then
     vim.cmd("highlight! link " .. group .. " " .. color.link)
   else
@@ -40,7 +33,14 @@ function util.highlight(group, color)
       data.sp = color.sp
     end
     if color.style and not (color.style == "NONE") then
-      data[color.style] = true
+      if type(color.style) == "string" then
+        data[color.style] = true
+      end
+      if type(color.style) == "table" then
+        for _, style in ipairs(color.style) do
+          data[style] = true
+        end
+      end
     end
     vim.api.nvim_set_hl(0, group, data)
     -- vim.cmd(hl)
