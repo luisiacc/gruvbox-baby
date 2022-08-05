@@ -101,6 +101,7 @@ function M.setup(config)
     TSString = { fg = c.soft_green, style = "nocombine" },
     TSCharacter = { fg = c.soft_green },
     TSNumber = { fg = c.magenta },
+    TSNamespace = { fg = c.light_blue },
     TSFuncBuiltin = { fg = c.soft_yellow },
     TSFunction = { fg = c.soft_yellow, style = config.function_style },
     TSFuncMacro = { fg = c.soft_yellow },
@@ -272,7 +273,7 @@ function M.setup(config)
     PmenuSbar = { bg = c.comment },
     PmenuThumb = { bg = c.foreground },
     EasyMotionShade = { fg = c.NONE },
-    Visual = { bg = c.bg_light },
+    Visual = { bg = c.background_dark },
     MultiCursor = { bg = c.bg_light },
     Cursor = { bg = c.bg_light, fg = c.NONE },
 
