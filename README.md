@@ -112,7 +112,6 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 
 - https://github.com/mhinz/vim-startify
 - https://github.com/nvim-treesitter/nvim-treesitter
-- https://github.com/neoclide/coc.nvim
 - https://github.com/kyazdani42/nvim-tree.lua
 - https://github.com/phaazon/hop.nvim
 - https://github.com/lukas-reineke/indent-blankline.nvim
