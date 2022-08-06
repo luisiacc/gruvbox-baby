@@ -72,6 +72,21 @@ vim.g.gruvbox_baby_transparent_mode = 1
 vim.cmd[[colorscheme gruvbox-baby]]
 ```
 
+If you enable the telescope theme, I recommend using it with this borderchars config:
+
+```lua
+telescope.setup({
+  defaults = {
+    ...
+    borderchars = {
+      prompt = { "─", " ", " ", " ", "─", "─", " ", " " },
+      results = { " " },
+      preview = { " " },
+    },
+  }
+})
+```
+
 ```vim
 " Example config in VimScript
 let g:gruvbox_baby_function_style = "NONE"
