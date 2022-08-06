@@ -214,7 +214,7 @@ function M.setup(config)
     CocExplorerFileModified = { fg = c.magenta },
     CocExplorerFileHidden = { fg = c.comment },
     CocExplorerHelpLine = { fg = c.magenta },
-    CocHighlightText = { bg = c.background_dark },
+    CocHighlightText = { bg = c.dark },
 
     EasyMotionTarget = { fg = c.red, style = "bold" },
     EasyMotionTarget2First = { fg = c.red, style = "bold" },

@@ -41,15 +41,16 @@ colorscheme gruvbox-baby
 
 > ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-baby`
 
-| Option           | Default  | Available options                                |
-| ---------------- | -------- | -------------------------------------------------|
-| background_color | `medium` | `medium`, `dark`                                 |
-| transparent_mode | `false`  | `false`, `true` - sets background colors to None |
-| comment_style    | `italic` | see `:h attr-list`                               |
-| keyword_style    | `italic` | see `:h attr-list`                               |
-| function_style   | `bold`   | see `:h attr-list`                               |
-| variable_style   | `NONE`   | see `:h attr-list`                               |
-| highlights      | `{}`     | override highlights with your custom colors      |
+| Option               | Default  | Available options                                 |
+| ----------------     | -------- | ------------------------------------------------- |
+| background_color     | `medium` | `medium`, `dark`                                  |
+| transparent_mode     | `false`  | `false`, `true` - sets background colors to None  |
+| comment_style        | `italic` | see `:h attr-list`                                |
+| keyword_style        | `italic` | see `:h attr-list`                                |
+| function_style       | `bold`   | see `:h attr-list`                                |
+| variable_style       | `NONE`   | see `:h attr-list`                                |
+| highlights           | `{}`     | override highlights with your custom colors       |
+| use_original_palette | `false`  | use the original gruvbox palette                  |
 
 ```lua
 -- Example config in Lua

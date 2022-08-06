@@ -1,8 +1,9 @@
-local palette = {
+local the_palette = {
+  dark0 = "#0d0e0f",
   dark = "#202020",
   foreground = "#ebdbb2",
   background = "#282828",
-  background_dark = "#242424",
+  background_dark = "#1d2021",
   bg_light = "#32302f",
   medium_gray = "#504945",
   comment = "#665c54",
@@ -23,42 +24,61 @@ local palette = {
   milk = "#E7D7AD",
   none = "NONE",
 }
+
 -- these are backgrounds
-palette.diff = {
+the_palette.diff = {
   add = "#26332c",
   change = "#273842",
   delete = "#572E33",
   text = "#314753",
 }
 
+local original_palette = vim.tbl_extend("force", the_palette, {
+  foreground = "#fbf1c7",
+  soft_green = "#b8bb26",
+  forest_green = "#b8bb26",
+  soft_yellow = "#fabd2f",
+  light_blue = "#83a598",
+  magenta = "#d3869b",
+  orange = "#fe8019",
+  gray = "#928374",
+  comment = "#928374",
+})
+
 local M = {}
 
 function M.config(config)
   config = config or require("gruvbox-baby.config")
+  local colors
+  if config.use_original_palette then
+    colors = original_palette
+  else
+    colors = the_palette
+  end
+
   local intensity_map = {
     ["dark"] = {
-      dark = "#161616",
-      background = "#202020",
-      background_dark = "#161616",
+      dark = colors.dark0,
+      background = colors.background_dark,
+      background_dark = colors.background_dark,
     },
     ["medium"] = {
-      background = palette.background,
-      background_dark = palette.background_dark,
+      background = colors.background,
+      background_dark = colors.background_dark,
     },
   }
 
-  local colors = palette
-  local background = config.background_color or palette.background
+  local background = config.background_color or colors.background
   if intensity_map[background] then
     colors = vim.tbl_extend("force", colors, intensity_map[background])
   end
 
   if config.transparent_mode then
-    transparent = {
-      background = palette.none,
-      background_dark = palette.none,
+    local transparent = {
+      background = colors.none,
+      background_dark = colors.none,
     }
-    colors = vim.tbl_extend("force", colors, { background = palette.none, background_dark = palette.none })
+    colors = vim.tbl_extend("force", colors, transparent)
   end
   return colors
 end
