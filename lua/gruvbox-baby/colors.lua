@@ -60,7 +60,7 @@ function M.config(config)
     ["dark"] = {
       dark = colors.dark0,
       background = colors.background_dark,
-      background_dark = colors.background_dark,
+      background_dark = colors.medium_gray,
     },
     ["medium"] = {
       background = colors.background,
