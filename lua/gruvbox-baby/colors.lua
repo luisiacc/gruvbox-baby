@@ -4,7 +4,7 @@ local the_palette = {
   foreground = "#ebdbb2",
   background = "#282828",
   background_dark = "#1d2021",
-  bg_light = "#32302f",
+  background_light = "#32302f",
   medium_gray = "#504945",
   comment = "#665c54",
   gray = "#DEDEDE",
@@ -65,6 +65,10 @@ function M.config(config)
     ["medium"] = {
       background = colors.background,
       background_dark = colors.background_dark,
+    },
+    ["light"] = {
+      background = colors.background_light,
+      background_dark = colors.background,
     },
   }
 
