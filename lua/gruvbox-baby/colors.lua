@@ -70,6 +70,10 @@ function M.config(config)
       background = colors.background_light,
       background_dark = colors.background,
     },
+    ["light_soft"] = {
+      background = colors.background_light,
+      background_dark = colors.background_light,
+    },
   }
 
   local background = config.background_color or colors.background
