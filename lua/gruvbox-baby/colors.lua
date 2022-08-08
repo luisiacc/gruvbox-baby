@@ -66,11 +66,11 @@ function M.config(config)
       background = colors.background,
       background_dark = colors.background_dark,
     },
-    ["light"] = {
+    ["soft"] = {
       background = colors.background_light,
       background_dark = colors.background,
     },
-    ["light_soft"] = {
+    ["soft_flat"] = {
       background = colors.background_light,
       background_dark = colors.background_light,
     },
