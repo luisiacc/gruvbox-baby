@@ -390,6 +390,14 @@ function M.setup(config)
     })
   end
 
+  if config.transparent_mode then
+    theme.base = vim.tbl_extend("force", theme.base, {
+      Visual = { bg = c.medium_gray },
+      MultiCursor = { bg = c.medium_gray },
+      Cursor = { bg = c.soft_green, c.dark }
+    })
+  end
+
   theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
   return theme
 end
