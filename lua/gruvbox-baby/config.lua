@@ -19,6 +19,7 @@ config = {
   comment_style = opt("comment_style", "italic"),
   keyword_style = opt("keyword_style", "italic"),
   function_style = opt("function_style", "bold"),
+  string_style = opt("string_style", "nocombine"),
   variable_style = opt("variable_style", "NONE"),
   highlights = opt("highlights", {}),
   telescope_theme = opt("telescope_theme", false),
