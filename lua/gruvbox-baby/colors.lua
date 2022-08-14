@@ -1,3 +1,5 @@
+local util = require("gruvbox-baby.util")
+
 local the_palette = {
   dark0 = "#0d0e0f",
   dark = "#202020",
@@ -60,15 +62,15 @@ function M.config(config)
     ["dark"] = {
       dark = colors.dark0,
       background = colors.background_dark,
-      background_dark = colors.dark,
+      background_dark = util.darken(colors.background_dark, 0.8),
     },
     ["medium"] = {
       background = colors.background,
-      background_dark = colors.background_dark,
+      background_dark = util.darken(colors.background, 0.9),
     },
     ["soft"] = {
       background = colors.background_light,
-      background_dark = colors.background,
+      background_dark = util.darken(colors.background_light, 0.8),
     },
     ["soft_flat"] = {
       background = colors.background_light,

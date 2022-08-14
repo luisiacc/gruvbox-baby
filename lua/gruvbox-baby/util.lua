@@ -1,8 +1,13 @@
+local hsluv = require("gruvbox-baby.hsluv")
+
 local util = {}
-local hsluv = require("hsluv")
 
 util.colorsUsed = {}
 util.colorCache = {}
+
+util.bg = "#000000"
+util.fg = "#ffffff"
+util.day_brightness = 0.3
 
 -- will improve in future
 function util.getColor(color)
