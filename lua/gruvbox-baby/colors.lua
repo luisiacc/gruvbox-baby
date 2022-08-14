@@ -71,10 +71,12 @@ function M.config(config)
     ["soft"] = {
       background = colors.background_light,
       background_dark = util.darken(colors.background_light, 0.8),
+      background_light = util.lighten(colors.background_light, 0.95),
     },
     ["soft_flat"] = {
       background = colors.background_light,
       background_dark = colors.background_light,
+      background_light = util.lighten(colors.background_light, 0.95),
     },
   }
 
