@@ -394,7 +394,7 @@ function M.setup(config)
     theme.base = vim.tbl_extend("force", theme.base, {
       Visual = { bg = c.medium_gray },
       MultiCursor = { bg = c.medium_gray },
-      Cursor = { bg = c.soft_green, c.dark }
+      Cursor = { bg = c.soft_green, c.dark },
     })
   end
 
