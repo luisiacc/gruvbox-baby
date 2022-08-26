@@ -369,6 +369,14 @@ function M.setup(config)
     mailSignature = { fg = c.comment },
     mailURL = { fg = c.orange, style = "underline" },
     mailEmail = { fg = c.soft_yellow },
+
+    rainbowcol1 = { fg = c.magenta },
+    rainbowcol2 = { fg = c.bright_yellow },
+    rainbowcol3 = { fg = c.red },
+    rainbowcol4 = { fg = c.clean_green },
+    rainbowcol5 = { fg = c.orange },
+    rainbowcol6 = { fg = c.pink },
+    rainbowcol7 = { fg = c.medium_gray },
   }
 
   if config.telescope_theme then
