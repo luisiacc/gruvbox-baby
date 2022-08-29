@@ -377,6 +377,12 @@ function M.setup(config)
     rainbowcol5 = { fg = c.orange },
     rainbowcol6 = { fg = c.pink },
     rainbowcol7 = { fg = c.medium_gray },
+        
+    -- Illuminate:
+    IlluminatedWordText = { bg = c.background_light },
+    IlluminatedWordRead = { bg = c.background_light },
+    IlluminatedWordWrite = { bg = c.background_light }
+
   }
 
   if config.telescope_theme then
