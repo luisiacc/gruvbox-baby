@@ -88,6 +88,7 @@ function M.config(config)
   if config.transparent_mode then
     local transparent = {
       background = colors.none,
+      background_dark = colors.none,
     }
     colors = vim.tbl_extend("force", colors, transparent)
   end
