@@ -1,4 +1,5 @@
 local hsluv = require("gruvbox-baby.hsluv")
+local theme_util = require("gruvbox-baby.theme")
 
 local util = {}
 
@@ -138,6 +139,7 @@ function util.load(theme)
   vim.o.termguicolors = true
   vim.g.colors_name = "gruvbox-baby"
 
+  theme_util.link_new_highlights()
   -- load base theme
   util.syntax(theme.base)
 
