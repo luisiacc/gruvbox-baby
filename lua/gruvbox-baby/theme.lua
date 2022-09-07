@@ -114,9 +114,9 @@ function M.setup(config)
     Conceal = { fg = c.comment },
     Directory = { fg = c.dark_gray },
 
-    TabLine = { bg = c.dark, fg = c.background_dark }, -- tab pages line, not active tab page label
+    TabLine = { bg = c.dark, fg = c.comment }, -- tab pages line, not active tab page label
     TabLineFill = { bg = c.background }, -- tab pages line, where there are no labels
-    TabLineSel = { fg = c.dark, bg = c.background_dark }, -- tab pages line, active tab page label
+    TabLineSel = { fg = c.foreground, bg = c.background_dark }, -- tab pages line, active tab page label
 
     DiffAdd = { bg = c.diff.add },
     DiffChange = { bg = c.diff.change },
