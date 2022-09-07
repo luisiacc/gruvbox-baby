@@ -6,7 +6,7 @@ local M = {}
 --   f.close()
 -- end
 function M.link_new_highlights()
-  if not vim.fn.has("nvim-0.8.0") then
+  if vim.fn.has("nvim-0.8.0") == 0 then
     return
   end
   vim.cmd([[
