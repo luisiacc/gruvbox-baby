@@ -4,30 +4,28 @@
 
 My variation of the gruvbox theme with full support for treesitter!
 
-## Why?
+## 🤔 Why?
 
 I wasn't comfortable with the gruvbox themes out there, either they didn't have good treesitter support or if they do, I
 didn't like their colors on python and javascript/typescript files.
 
 ## 📸 Pretty pictures
-
-Lua example
-![lua-example](https://user-images.githubusercontent.com/31720261/147399333-5dc8d3dc-b382-4f13-a047-fb99298af028.png)
-
-Python example
-![python-example](https://user-images.githubusercontent.com/31720261/147399558-bf00b60a-aea9-46f7-a823-fc760cda05be.png)
-
-React with typescript example
-![react-typescript-example](https://user-images.githubusercontent.com/31720261/147399581-66030749-3fa2-466d-aa8a-e79b6181185c.png)
-
-Telescope theme inspired by https://github.com/NvChad/NvChad (You have to enable it via config variable)
-![telescope-theme](https://user-images.githubusercontent.com/31720261/151669762-1470aa12-b6ff-47c1-a4e9-ec9b37e0eabe.png)
-
-#### Data from images:
-
 Font: **Jetbrains Mono patched with nerd fonts**
 
-Terminal: https://github.com/wez/wezterm
+Terminal: wezterm https://github.com/wez/wezterm
+
+#### 🌙 Lua
+![lua-example](https://user-images.githubusercontent.com/31720261/147399333-5dc8d3dc-b382-4f13-a047-fb99298af028.png)
+
+#### 🐍 Python
+![python-example](https://user-images.githubusercontent.com/31720261/147399558-bf00b60a-aea9-46f7-a823-fc760cda05be.png)
+
+#### ⚛️ React with typescript
+![react-typescript-example](https://user-images.githubusercontent.com/31720261/147399581-66030749-3fa2-466d-aa8a-e79b6181185c.png)
+
+#### 🔍 Telescope
+_inspired by https://github.com/NvChad/NvChad (You have to enable it via config variable)_
+![telescope-theme](https://user-images.githubusercontent.com/31720261/151669762-1470aa12-b6ff-47c1-a4e9-ec9b37e0eabe.png)
 
 ## ⚙️ Installation
 
@@ -134,46 +132,89 @@ require('lualine').setup {
     }
 }
 ```
+
+## 🌈 Palette
+![gruvbox-baby medium](extras/media/palettes/medium.svg)
+![gruvbox-baby intensities](extras/media/palettes/shades.svg)
+
+<details>
+<summary><h3>📋 Colors</h3></summary>
+
+|**Color**|**Code**|**Name**|
+|---|---|---|
+|<img src="https://www.colorhexa.com/ebdbb2.png" width="32" height="32">|#ebdbb2|foreground|
+|<img src="https://www.colorhexa.com/dedede.png" width="32" height="32">|#dedede|gray|
+|<img src="https://www.colorhexa.com/504945.png" width="32" height="32">|#504945|medium_gray|
+|<img src="https://www.colorhexa.com/665c54.png" width="32" height="32">|#665c54|comment|
+|<img src="https://www.colorhexa.com/e7d7ad.png" width="32" height="32">|#e7d7ad|milk|
+|<img src="https://www.colorhexa.com/cc241d.png" width="32" height="32">|#cc241d|error_red|
+|<img src="https://www.colorhexa.com/fb4934.png" width="32" height="32">|#fb4934|red|
+|<img src="https://www.colorhexa.com/d65d0e.png" width="32" height="32">|#d65d0e|orange|
+|<img src="https://www.colorhexa.com/fabd2f.png" width="32" height="32">|#fabd2f|bright_yellow|
+|<img src="https://www.colorhexa.com/eebd35.png" width="32" height="32">|#eebd35|soft_yellow|
+|<img src="https://www.colorhexa.com/d4879c.png" width="32" height="32">|#d4879c|pink|
+|<img src="https://www.colorhexa.com/b16286.png" width="32" height="32">|#b16286|magenta|
+|<img src="https://www.colorhexa.com/98971a.png" width="32" height="32">|#98971a|soft_green|
+|<img src="https://www.colorhexa.com/689d6a.png" width="32" height="32">|#689d6a|forest_green|
+|<img src="https://www.colorhexa.com/8ec07c.png" width="32" height="32">|#8ec07c|clean_green|
+|<img src="https://www.colorhexa.com/458588.png" width="32" height="32">|#458588|blue_gray|
+|<img src="https://www.colorhexa.com/83a598.png" width="32" height="32">|#83a598|dark_gray|
+|<img src="https://www.colorhexa.com/7fa2ac.png" width="32" height="32">|#7fa2ac|light_blue|
+</details>
+<details>
+<summary><h3>👶 Medium Intensity</h3></summary>
+
+![gruvbox-baby medium](extras/media/palettes/medium.svg)
+|**Color**|**Code**|**Name**|
+|---|---|---|
+|<img src="https://www.colorhexa.com/0d0e0f.png" width="32" height="32">|#0d0e0f|dark0|
+|<img src="https://www.colorhexa.com/202020.png" width="32" height="32">|#202020|dark|
+|<img src="https://www.colorhexa.com/242424.png" width="32" height="32">|#242424|background_dark|
+|<img src="https://www.colorhexa.com/282828.png" width="32" height="32">|#282828|background|
+|<img src="https://www.colorhexa.com/32302f.png" width="32" height="32">|#32302f|background_light|
+</details>
+<details>
+<summary><h3>🎱 Dark Intensity</h3></summary>
+
+![gruvbox-baby dark](extras/media/palettes/dark.svg)
+|**Color**|**Code**|**Name**|
+|---|---|---|
+|<img src="https://www.colorhexa.com/0d0e0f.png" width="32" height="32">|#0d0e0f|dark0|
+|<img src="https://www.colorhexa.com/0d0e0f.png" width="32" height="32">|#0d0e0f|dark|
+|<img src="https://www.colorhexa.com/171a1a.png" width="32" height="32">|#171a1a|background_dark|
+|<img src="https://www.colorhexa.com/1d2021.png" width="32" height="32">|#1d2021|background|
+|<img src="https://www.colorhexa.com/32302f.png" width="32" height="32">|#32302f|background_light|
+</details>
+<details>
+<summary><h3>🍦 Soft Intensity</h3></summary>
+
+![gruvbox-baby soft](extras/media/palettes/soft.svg)
+|**Color**|**Code**|**Name**|
+|---|---|---|
+|<img src="https://www.colorhexa.com/0d0e0f.png" width="32" height="32">|#0d0e0f|dark0|
+|<img src="https://www.colorhexa.com/202020.png" width="32" height="32">|#202020|dark|
+|<img src="https://www.colorhexa.com/282626.png" width="32" height="32">|#282626|background_dark|
+|<img src="https://www.colorhexa.com/32302f.png" width="32" height="32">|#32302f|background|
+|<img src="https://www.colorhexa.com/3c3a39.png" width="32" height="32">|#3c3a39|background_light|
+</details>
+<details>
+<summary><h3>🥿 Soft Flat Intensity</h3></summary>
+
+![gruvbox-baby soft flat](extras/media/palettes/soft_flat.svg)
+|**Color**|**Code**|**Name**|
+|---|---|---|
+|<img src="https://www.colorhexa.com/0d0e0f.png" width="32" height="32">|#0d0e0f|dark0|
+|<img src="https://www.colorhexa.com/202020.png" width="32" height="32">|#202020|dark|
+|<img src="https://www.colorhexa.com/32302f.png" width="32" height="32">|#32302f|background_dark|
+|<img src="https://www.colorhexa.com/32302f.png" width="32" height="32">|#32302f|background|
+|<img src="https://www.colorhexa.com/3c3a39.png" width="32" height="32">|#3c3a39|background_light|
+</details>
+
 ## 👽 Extras
 
 Extra color configs for **iTerm2** can be found on [extras](extras/)
 
-## 🌈 Palette
-
-![gruvbox palette](https://user-images.githubusercontent.com/31720261/147415431-13f6c6af-2f76-46c9-8448-20c71e359fc5.png)
-
-```
-dark = "#202020",
-foreground = "#ebdbb2",
-background = "#282828",
-background_dark = "#242424",
-background_light = "#32302f",
-medium_gray = "#504945",
-comment = "#665c54",
-gray = "#DEDEDE",
-soft_yellow = "#EEBD35",
-soft_green = "#98971a",
-bright_yellow = "#fabd2f",
-orange = "#d65d0e",
-red = "#fb4934",
-error_red = "#cc241d",
-magenta = "#b16286",
-pink = "#D4879C",
-light_blue = "#7fa2ac",
-dark_gray = "#83a598",
-blue_gray = "#458588",
-forest_green = "#689d6a",
-clean_green = "#8ec07c",
-milk = "#E7D7AD",
-
--- Dark theme changes colors to
-["dark"] = {
-      dark = "#161616",
-      background = "#202020",
-      background_dark = "#161616",
-    },
-```
-## Aknowledgments
+## 👆 Acknowledgments
 
 - Shutout to @ThePrimeagen for the inspiration for the plugin name, Gruvbox baby!
 - I based my structure on https://github.com/folke/tokyonight.nvim (and also copied some of it)
