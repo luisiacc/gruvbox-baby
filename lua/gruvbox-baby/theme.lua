@@ -2,6 +2,7 @@ local M = {}
 
 -- local _debug = function(content)
 --   local f = io.open("/home/acc/.nvim.debug.log", "a")
+--
 --   f:write(vim.inspect(content) .. "\n")
 --   f.close()
 -- end
@@ -339,7 +340,7 @@ function M.setup(config)
     EasyMotionShade = { fg = c.NONE },
     Visual = { bg = c.medium_gray },
     MultiCursor = { bg = c.background_light },
-    Cursor = { bg = c.background_light, fg = c.NONE },
+    Cursor = { bg = c.medium_gray, fg = c.NONE },
 
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray },
