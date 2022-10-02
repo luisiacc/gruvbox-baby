@@ -50,6 +50,7 @@ function M.link_new_highlights()
     highlight! link @structure TSStructure
     highlight! link @symbol TSSymbol
     highlight! link @tag TSTag
+    highlight! link @tag.attribute TSAttribute
     highlight! link @tag.delimiter TSTagDelimiter
     highlight! link @text TSText
     highlight! link @strike TSStrike
@@ -203,6 +204,7 @@ function M.setup(config)
     rustTSVariable = { fg = c.foreground, bg = c.NONE, style = "NONE" },
     javascriptTSConditional = { fg = c.red },
     javascriptTSVariable = { fg = c.light_blue },
+    TSTagAttribute = { fg = c.soft_yellow },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
@@ -379,7 +381,7 @@ function M.setup(config)
     CmpItemAbbrMatchFuzzy = { fg = c.light_blue },
 
     CmpItemKindDefault = { fg = c.dark_gray },
-    CmpItemMenu = { fg = c.comment, bg = c.background },
+    CmpItemMenu = { fg = c.comment },
 
     CmpItemKindKeyword = { fg = c.blue_gray },
 
@@ -438,7 +440,7 @@ function M.setup(config)
     rainbowcol4 = { fg = c.clean_green },
     rainbowcol5 = { fg = c.orange },
     rainbowcol6 = { fg = c.pink },
-    rainbowcol7 = { fg = c.medium_gray },
+    rainbowcol7 = { fg = c.orange },
 
     -- Illuminate:
     IlluminatedWordText = { bg = c.background_light },

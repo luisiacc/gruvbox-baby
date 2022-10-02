@@ -138,14 +138,13 @@ function util.load(theme)
 
   vim.o.termguicolors = true
   vim.g.colors_name = "gruvbox-baby"
-
-  theme_util.link_new_highlights()
   -- load base theme
   util.syntax(theme.base)
 
   vim.defer_fn(function()
     util.syntax(theme.defer)
   end, 100)
+  theme_util.link_new_highlights()
 end
 
 return util
