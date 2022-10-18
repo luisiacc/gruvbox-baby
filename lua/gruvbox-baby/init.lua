@@ -5,6 +5,7 @@ local M = {}
 
 function M.colorscheme()
   util.load(theme.setup())
+  require("gruvbox-baby.ts-fix")
 end
 
 return M
