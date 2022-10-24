@@ -93,8 +93,8 @@ function M.config(config)
     colors = vim.tbl_extend("force", colors, transparent)
   end
 
-  if config.overrides then
-    for override_color, new_color in pairs(config.overrides) do
+  if config.color_overrides then
+    for override_color, new_color in pairs(config.color_overrides) do
       colors[override_color] = new_color
     end
   end
