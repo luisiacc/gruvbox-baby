@@ -95,9 +95,6 @@ function M.config(config)
 
   if config.overrides then
     for override_color, new_color in pairs(config.overrides) do
-      if new_color:match("^%a") then -- use existing palette color
-        new_color = colors[new_color]
-      end
       colors[override_color] = new_color
     end
   end
