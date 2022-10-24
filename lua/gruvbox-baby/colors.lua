@@ -92,6 +92,12 @@ function M.config(config)
     }
     colors = vim.tbl_extend("force", colors, transparent)
   end
+
+  if config.overrides then
+    for override_color, new_color_hex in pairs(config.overrides) do
+      colors[override_color] = new_color_hex;
+    end
+  end
   return colors
 end
 
