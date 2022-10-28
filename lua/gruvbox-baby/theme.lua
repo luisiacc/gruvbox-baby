@@ -106,7 +106,7 @@ function M.setup(config)
     StorageClass = { fg = c.blue_gray },
     Structure = { fg = c.soft_yellow },
     Typedef = { fg = c.soft_yellow },
-    Special = { fg = c.dark_gray, style = "italic" },
+    Special = { fg = c.dark_gray},
     SpecialComment = { fg = c.comment },
     MoreMsg = { fg = c.foreground },
     Error = { fg = c.red, style = "bold" },
