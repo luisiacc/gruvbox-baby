@@ -126,7 +126,7 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 - https://github.com/nvim-telescope/telescope.nvim
 - https://github.com/nvim-lualine/lualine.nvim
 
-### To enable Lualine
+#### enable Lualine
 
 To enable `gruvbox-baby` theme for `Lualine`, simply specify it in your lualine settings:
 
@@ -225,7 +225,19 @@ require('lualine').setup {
 
 ## 👽 Extras
 
-Extra color configs for **iTerm2** can be found on [extras](extras/)
+- **iTerm2** color theme found on [extras](extras/iterm2)
+- **tmux** color themes found on [extras](extras/tmux)
+- **Windows Terminal** color themes found on [extras](extras/windows_terminal)
+
+#### add to Windows Terminal
+
+To add the gruvbox-baby themes to Windows Terminal run,
+
+```bash
+extras/windows_terminal/add_themes_to_windows_terminal.py $PATH_TO_WINDOWS_TERMINAL_SETTINGS_JSON
+# Windows Terminal settings.json can be found at 
+# %LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+```
 
 ## 👆 Acknowledgments
 
