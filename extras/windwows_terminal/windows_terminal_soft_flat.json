@@ -1,0 +1,23 @@
+{
+    "cursorColor": "#504945",
+    "selectionBackground": "#e7d7ad",
+    "background": "#32302f",
+    "foreground": "#ebdbb2",
+    "black": "#32302f",
+    "brightBlack": "#3c3a39",
+    "blue": "#458588",
+    "brightBlue": "#7fa2ac",
+    "cyan": "#83a598",
+    "brightCyan": "#689d6a",
+    "green": "#98971a",
+    "brightGreen": "#8ec07c",
+    "purple": "#b16286",
+    "brightPurple": "#d4879c",
+    "red": "#cc241d",
+    "brightRed": "#fb4934",
+    "white": "#dedede",
+    "brightWhite": "#e7d7ad",
+    "yellow": "#fabd2f",
+    "brightYellow": "#eebd35",
+    "name": "gruvbox-baby-soft_flat"
+}
