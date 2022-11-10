@@ -436,12 +436,12 @@ function M.setup(config)
     mailEmail = { fg = c.soft_yellow },
 
     rainbowcol1 = { fg = c.magenta },
-    rainbowcol2 = { fg = c.bright_yellow },
-    rainbowcol3 = { fg = c.red },
-    rainbowcol4 = { fg = c.clean_green },
-    rainbowcol5 = { fg = c.orange },
-    rainbowcol6 = { fg = c.pink },
-    rainbowcol7 = { fg = c.orange },
+    rainbowcol2 = { fg = c.dark_gray},
+    rainbowcol3 = { fg = c.clean_green},
+    rainbowcol4 = { fg = c.soft_green},
+    rainbowcol5 = { fg = c.soft_yellow},
+    rainbowcol6 = { fg = c.orange},
+    rainbowcol7 = { fg = c.pink},
 
     -- Illuminate:
     IlluminatedWordText = { bg = c.background_light },
