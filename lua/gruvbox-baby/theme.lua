@@ -58,6 +58,7 @@ function M.link_new_highlights()
     highlight! link @math TSMath
     highlight! link @type TSType
     highlight! link @type.builtin TSTypeBuiltin
+    highlight! link @type.qualifier TSTypeQualifier
     highlight! link @uri TSURI
     highlight! link @variable TSVariable
     highlight! link @variable.builtin TSVariableBuiltin
@@ -186,6 +187,7 @@ function M.setup(config)
     TSException = { fg = c.red },
     TSType = { fg = c.clean_green },
     TSTypeBuiltin = { fg = c.blue_gray },
+    TSTypeQualifier = { fg = c.orange},
     TSStructure = { fg = c.blue_gray },
     TSVariable = { fg = c.light_blue, style = config.variable_style },
     TSVariableBuiltin = { fg = c.blue_gray },
