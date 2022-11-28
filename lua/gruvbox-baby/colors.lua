@@ -1,5 +1,7 @@
 local util = require("gruvbox-baby.util")
 
+local M = {}
+
 local the_palette = {
   dark0 = "#0d0e0f",
   dark = "#202020",
@@ -34,6 +36,7 @@ the_palette.diff = {
   delete = "#572E33",
   text = "#314753",
 }
+M.p = the_palette
 
 local original_palette = vim.tbl_extend("force", the_palette, {
   foreground = "#fbf1c7",
@@ -46,8 +49,6 @@ local original_palette = vim.tbl_extend("force", the_palette, {
   gray = "#928374",
   comment = "#928374",
 })
-
-local M = {}
 
 function M.config(config)
   config = config or require("gruvbox-baby.config")
