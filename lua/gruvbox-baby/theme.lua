@@ -130,7 +130,7 @@ function M.setup(config)
     ErrorMsg = { fg = c.red },
     VertSplit = { fg = c.background_light },
     Folded = { fg = c.comment },
-    IncSearch = { bg = colors.p.background_dark },
+    IncSearch = { bg = c.milk },
     LineNr = { fg = c.medium_gray },
     MatchParen = { bg = c.blue_gray, style = "underline" },
     NonText = { fg = c.comment },
@@ -138,7 +138,7 @@ function M.setup(config)
     PmenuSel = { fg = c.background, bg = c.blue_gray },
     Question = { fg = c.magenta },
     QuickFixLine = { fg = c.background, bg = c.soft_yellow },
-    Search = { fg = c.background, bg = colors.p.background_dark },
+    Search = { bg = c.milk },
     SpecialKey = { fg = c.comment },
     SpellBad = { fg = c.red, style = "underline" },
     SpellCap = { fg = c.bright_yellow },
@@ -349,7 +349,7 @@ function M.setup(config)
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray },
     Underlined = { fg = c.error_red, style = "underline" },
-    cppTSVariable = { fg = c.milk },
+    cppTSVariable = { fg = c.foreground },
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },
