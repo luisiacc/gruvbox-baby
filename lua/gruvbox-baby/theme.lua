@@ -478,6 +478,7 @@ function M.setup(config)
       MultiCursor = { bg = c.medium_gray },
       Cursor = { bg = c.soft_green, c.dark },
       ColorColumn = { bg = c.medium_gray },
+      MatchParen = { fg = c.milk, style = "bold" },
     })
   end
 
