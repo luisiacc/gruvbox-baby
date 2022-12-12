@@ -477,6 +477,7 @@ function M.setup(config)
       Visual = { bg = c.medium_gray },
       MultiCursor = { bg = c.medium_gray },
       Cursor = { bg = c.soft_green, c.dark },
+      ColorColumn = { bg = c.medium_gray },
     })
   end
 
