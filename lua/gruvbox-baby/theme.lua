@@ -6,71 +6,6 @@ local M = {}
 --   f:write(vim.inspect(content) .. "\n")
 --   f.close()
 -- end
-function M.link_new_highlights()
-  if vim.fn.has("nvim-0.8.0") == 0 then
-    return
-  end
-  vim.cmd([[
-    highlight! link @annotation TSAnnotation
-    highlight! link @attribute TSAttribute
-    highlight! link @boolean TSBoolean
-    highlight! link @character TSCharacter
-    highlight! link @comment TSComment
-    highlight! link @conditional TSConditional
-    highlight! link @constant TSConstant
-    highlight! link @constant.builtin TSConstBuiltin
-    highlight! link @constant.macro TSConstMacro
-    highlight! link @constructor TSConstructor
-    highlight! link @exception TSException
-    highlight! link @field TSField
-    highlight! link @float TSFloat
-    highlight! link @function TSFunction
-    highlight! link @function.builtin TSFuncBuiltin
-    highlight! link @function.macro TSFuncMacro
-    highlight! link @include TSInclude
-    highlight! link @keyword TSKeyword
-    highlight! link @keyword.function TSKeywordFunction
-    highlight! link @keyword.operator TSKeywordOperator
-    highlight! link @label TSLabel
-    highlight! link @method TSMethod
-    highlight! link @namespace TSNamespace
-    highlight! link @none TSNone
-    highlight! link @number TSNumber
-    highlight! link @operator TSOperator
-    highlight! link @parameter TSParameter
-    highlight! link @parameter.reference TSParameterReference
-    highlight! link @property TSProperty
-    highlight! link @punctuation.bracket TSPunctBracket
-    highlight! link @punctuation.delimiter TSPunctDelimiter
-    highlight! link @punctuation.special TSPunctSpecial
-    highlight! link @repeat TSRepeat
-    highlight! link @storageclass TSStorageClass
-    highlight! link @storageclass.lifetime TSStorageClassLifetime
-    highlight! link @string TSString
-    highlight! link @string.escape TSStringEscape
-    highlight! link @string.regex TSStringRegex
-    highlight! link @structure TSStructure
-    highlight! link @symbol TSSymbol
-    highlight! link @tag TSTag
-    highlight! link @tag.attribute TSAttribute
-    highlight! link @tag.delimiter TSTagDelimiter
-    highlight! link @text TSText
-    highlight! link @strike TSStrike
-    highlight! link @math TSMath
-    highlight! link @type TSType
-    highlight! link @type.builtin TSTypeBuiltin
-    highlight! link @type.qualifier TSTypeQualifier
-    highlight! link @uri TSURI
-    highlight! link @variable TSVariable
-    highlight! link @variable.builtin TSVariableBuiltin
-
-    highlight! link @variable.python pythonTSVariable
-    highlight! link @decorator.python pythonTSDecorator
-    highlight! link @variable.rust rustTSVariable
-    highlight! link @conditional.javascript javascriptTSConditional
-    highlight! link @variable.javascript javascriptTSVariable
-  ]])
-end
 
 function M.setup(config)
   config = config or require("gruvbox-baby.config")
@@ -155,61 +90,61 @@ function M.setup(config)
     EndOfBuffer = { fg = c.background },
 
     -- Tree Sitter
-    TSBoolean = { fg = c.orange },
-    TSDefine = { fg = c.red },
-    TSComment = { fg = c.comment, style = config.comment_style },
-    TSError = { fg = c.red },
-    TSPunctDelimiter = { fg = c.foreground },
-    TSPunctBracket = { fg = c.foreground },
-    TSPunctSpecial = { fg = c.foreground },
-    TSConstant = { fg = c.pink, style = "bold" },
-    TSConstBuiltin = { fg = c.pink },
-    TSString = { fg = c.soft_green, style = config.string_style },
-    TSCharacter = { fg = c.soft_green },
-    TSNumber = { fg = c.magenta },
-    TSNamespace = { fg = c.light_blue },
-    TSFuncBuiltin = { fg = c.soft_yellow },
-    TSFunction = { fg = c.soft_yellow, style = config.function_style },
-    TSFuncMacro = { fg = c.soft_yellow },
-    TSParameter = { fg = c.blue_gray, style = "nocombine" },
-    TSParameterReference = { fg = c.dark_gray },
-    TSMethod = { fg = c.soft_yellow, style = config.function_style },
-    TSField = { fg = c.light_blue },
-    TSProperty = { fg = c.blue_gray },
-    TSConstructor = { fg = c.clean_green, style = "nocombine" },
-    TSConditional = { fg = c.red },
-    TSRepeat = { fg = c.red },
-    TSLabel = { fg = c.blue_gray },
-    TSKeyword = { fg = c.red, style = config.keyword_style },
-    -- TSKeywordReturn = { fg = c.red, style = config.keyword_style },
-    TSKeywordFunction = { fg = c.red, style = config.keyword_style },
-    TSKeywordOperator = { fg = c.red },
-    TSOperator = { fg = c.foreground },
-    TSException = { fg = c.red },
-    TSType = { fg = c.clean_green },
-    TSTypeBuiltin = { fg = c.blue_gray },
-    TSTypeQualifier = { fg = c.orange },
-    TSStorageClassLifetime = {fg = c.orange},
-    TSStructure = { fg = c.blue_gray },
-    TSVariable = { fg = c.light_blue, style = config.variable_style },
-    TSVariableBuiltin = { fg = c.blue_gray },
-    TSText = { fg = c.soft_yellow },
-    TSStrong = { fg = c.soft_yellow },
-    TSEmphasis = { fg = c.soft_yellow },
-    TSUnderline = { fg = c.soft_yellow },
-    TSTitle = { fg = c.soft_yellow },
-    TSLiteral = { fg = c.soft_yellow },
-    TSURI = { fg = c.soft_yellow },
-    TSTag = { fg = c.clean_green },
-    TSTagDelimiter = { fg = c.comment },
-
+    ["@boolean"] = { fg = c.orange },
+    ["@define"] = { fg = c.red },
+    ["@comment"] = { fg = c.comment, style = config.comment_style },
+    ["@error"] = { fg = c.red },
+    ["@punctuation.delimiter"] = { fg = c.foreground },
+    ["@punctuation.bracket"] = { fg = c.foreground },
+    ["@punctuation.special"] = { fg = c.foreground },
+    ["@constant"] = { fg = c.pink, style = "bold" },
+    ["@const.builtin"] = { fg = c.pink },
+    ["@string"] = { fg = c.soft_green, style = config.string_style },
+    ["@character"] = { fg = c.soft_green },
+    ["@number"] = { fg = c.magenta },
+    ["@namespace"] = { fg = c.light_blue },
+    ["@func.builtin"] = { fg = c.soft_yellow },
+    ["@function"] = { fg = c.soft_yellow, style = config.function_style },
+    ["@func.macro"] = { fg = c.soft_yellow },
+    ["@parameter"] = { fg = c.blue_gray, style = "nocombine" },
+    ["@parameter.reference"] = { fg = c.dark_gray },
+    ["@method"] = { fg = c.soft_yellow, style = config.function_style },
+    ["@field"] = { fg = c.light_blue },
+    ["@property"] = { fg = c.blue_gray },
+    ["@constructor"] = { fg = c.clean_green, style = "nocombine" },
+    ["@conditional"] = { fg = c.red },
+    ["@repeat"] = { fg = c.red },
+    ["@label"] = { fg = c.blue_gray },
+    ["@keyword"] = { fg = c.red, style = config.keyword_style },
+    -- ["@keyword.return"] = { fg = c.red, style = config.keyword_style },
+    ["@keyword.function"] = { fg = c.red, style = config.keyword_style },
+    ["@keyword.operator"] = { fg = c.red },
+    ["@operator"] = { fg = c.foreground },
+    ["@exception"] = { fg = c.red },
+    ["@type"] = { fg = c.clean_green },
+    ["@type.builtin"] = { fg = c.blue_gray },
+    ["@type.qualifier"] = { fg = c.orange },
+    ["@storageclass.lifetime"] = {fg = c.orange},
+    ["@structure"] = { fg = c.blue_gray },
+    ["@variable"] = { fg = c.light_blue, style = config.variable_style },
+    ["@variable.builtin"] = { fg = c.blue_gray },
+    ["@text"] = { fg = c.soft_yellow },
+    ["@text.strong"] = { fg = c.soft_yellow },
+    ["@text.emphasis"] = { fg = c.soft_yellow },
+    ["@text.underline"] = { fg = c.soft_yellow },
+    ["@text.title"] = { fg = c.soft_yellow },
+    ["@text.literal"] = { fg = c.soft_yellow },
+    ["@uri"] = { fg = c.soft_yellow },
+    ["@tag"] = { fg = c.clean_green },
+    ["@tag.delimiter"] = { fg = c.comment },
+    ["@tag.attribute"] = { fg = c.soft_yellow },
+    --
     -- per language TreeSitter
-    pythonTSVariable = { fg = c.foreground, bg = c.NONE, style = "NONE" },
+    ["@variable.python"] = { fg = c.foreground, style = "NONE" },
     pythonDecorator = { fg = c.orange, style = "bold" },
-    rustTSVariable = { fg = c.foreground, bg = c.NONE, style = "NONE" },
-    javascriptTSConditional = { fg = c.red },
-    javascriptTSVariable = { fg = c.light_blue },
-    TSTagAttribute = { fg = c.soft_yellow },
+    ["@variable.rust"] = { fg = c.foreground, style = "NONE" },
+    ["@conditional.javascript"] = { fg = c.red },
+    ["@variable.javascript"] = { fg = c.light_blue },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
@@ -349,7 +284,7 @@ function M.setup(config)
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray },
     Underlined = { fg = c.error_red, style = "underline" },
-    cppTSVariable = { fg = c.foreground },
+    ["@variable.cpp"] = { fg = c.foreground },
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },

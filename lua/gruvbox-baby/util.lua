@@ -144,7 +144,6 @@ function util.load(theme)
   vim.defer_fn(function()
     util.syntax(theme.defer)
   end, 100)
-  theme_util.link_new_highlights()
 end
 
 return util
