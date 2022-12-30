@@ -116,7 +116,7 @@ function M.setup(config)
     ["@repeat"] = { fg = c.red },
     ["@label"] = { fg = c.blue_gray },
     ["@keyword"] = { fg = c.red, style = config.keyword_style },
-    -- ["@keyword.return"] = { fg = c.red, style = config.keyword_style },
+    ["@keyword.return"] = { fg = c.red, style = config.keyword_style },
     ["@keyword.function"] = { fg = c.red, style = config.keyword_style },
     ["@keyword.operator"] = { fg = c.red },
     ["@operator"] = { fg = c.foreground },
