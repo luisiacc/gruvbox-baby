@@ -386,6 +386,12 @@ function M.setup(config)
     IlluminatedWordText = { bg = c.background_light },
     IlluminatedWordRead = { bg = c.background_light },
     IlluminatedWordWrite = { bg = c.background_light },
+
+    -- Dashboard
+    DashboardHeader = { fg = c.red },
+    DashboardShortCut = { fg = c.light_blue },
+    DashboardCenter = { fg = c.bright_yellow },
+    DashboardFooter = { fg = c.blue_gray },
   }
 
   if config.telescope_theme then
