@@ -18,7 +18,7 @@ function M.setup(config)
     NormalFloat = { fg = c.foreground, bg = c.background_dark },
     Normal = { fg = c.foreground, bg = c.background },
     Comment = { fg = c.comment, style = config.comment_style },
-    Constant = { fg = c.soft_yellow },
+    Constant = { fg = c.pink },
     String = { fg = c.soft_green, style = config.string_style },
     Character = { fg = c.soft_yellow },
     Number = { fg = c.bright_yellow },
@@ -43,7 +43,7 @@ function M.setup(config)
     StorageClass = { fg = c.blue_gray },
     Structure = { fg = c.soft_yellow },
     Typedef = { fg = c.soft_yellow },
-    Special = { fg = c.dark_gray},
+    Special = { fg = c.dark_gray },
     SpecialComment = { fg = c.comment },
     MoreMsg = { fg = c.foreground },
     Error = { fg = c.red, style = "bold" },
@@ -98,7 +98,8 @@ function M.setup(config)
     ["@punctuation.bracket"] = { fg = c.foreground },
     ["@punctuation.special"] = { fg = c.foreground },
     ["@constant"] = { fg = c.pink, style = "bold" },
-    ["@const.builtin"] = { fg = c.pink },
+    ["@definition.constant"] = { fg = c.pink, style = "bold" },
+    ["@constant.builtin"] = { fg = c.pink },
     ["@string"] = { fg = c.soft_green, style = config.string_style },
     ["@character"] = { fg = c.soft_green },
     ["@number"] = { fg = c.magenta },
@@ -126,7 +127,7 @@ function M.setup(config)
     ["@type"] = { fg = c.clean_green },
     ["@type.builtin"] = { fg = c.blue_gray },
     ["@type.qualifier"] = { fg = c.orange },
-    ["@storageclass.lifetime"] = {fg = c.orange},
+    ["@storageclass.lifetime"] = { fg = c.orange },
     ["@structure"] = { fg = c.blue_gray },
     ["@variable"] = { fg = c.light_blue, style = config.variable_style },
     ["@variable.builtin"] = { fg = c.blue_gray },
@@ -143,7 +144,8 @@ function M.setup(config)
     --
     -- per language TreeSitter
     ["@variable.python"] = { fg = c.foreground, style = "NONE" },
-    pythonDecorator = { fg = c.orange, style = "bold" },
+    ["@attribute.python"] = { fg = c.orange, style = "bold" },
+    ["@decorator"] = { fg = c.orange, style = "bold" },
     ["@variable.rust"] = { fg = c.foreground, style = "NONE" },
     ["@conditional.javascript"] = { fg = c.red },
     ["@variable.javascript"] = { fg = c.light_blue },
@@ -308,9 +310,10 @@ function M.setup(config)
     HopNextKey2 = { fg = c.milk, bg = c.dark },
 
     -- indent blankline
-    IndentBlanklineChar = { fg = "#313131" },
-    IndentBlanklineSpaceChar = { fg = "#313131" },
-    IndentBlanklineContextChar = { fg = "#365050" },
+    IndentBlanklineChar = { fg = "#414141" },
+    IndentBlanklineSpaceChar = { fg = "#414141" },
+    IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
+    IndentBlanklineContextChar = { fg = "#505050" },
 
     FloatBorder = { bg = c.background_dark },
     -- Cmp
@@ -377,12 +380,12 @@ function M.setup(config)
     mailEmail = { fg = c.soft_yellow },
 
     rainbowcol1 = { fg = c.magenta },
-    rainbowcol2 = { fg = c.dark_gray},
-    rainbowcol3 = { fg = c.clean_green},
-    rainbowcol4 = { fg = c.soft_green},
-    rainbowcol5 = { fg = c.soft_yellow},
-    rainbowcol6 = { fg = c.orange},
-    rainbowcol7 = { fg = c.pink},
+    rainbowcol2 = { fg = c.dark_gray },
+    rainbowcol3 = { fg = c.clean_green },
+    rainbowcol4 = { fg = c.soft_green },
+    rainbowcol5 = { fg = c.soft_yellow },
+    rainbowcol6 = { fg = c.orange },
+    rainbowcol7 = { fg = c.pink },
 
     -- Illuminate:
     IlluminatedWordText = { bg = c.background_light },
