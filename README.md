@@ -229,6 +229,7 @@ require('lualine').setup {
 - **tmux** color themes found on [extras](extras/tmux)
 - **bash/zsh** color themes found on [extras](extras/bash)
 - **Windows Terminal** color themes found on [extras](extras/windows_terminal)
+- **fzf** color theme found on [extras](extras/fzf)
 
 #### add to Windows Terminal
 
@@ -238,6 +239,15 @@ To add the gruvbox-baby themes to Windows Terminal run,
 extras/windows_terminal/add_themes_to_windows_terminal.py $PATH_TO_WINDOWS_TERMINAL_SETTINGS_JSON
 # Windows Terminal settings.json can be found at 
 # %LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+```
+
+#### use with fzf
+To use the fzf theme append the variable/string to your FZF_DEFAULT_OPTS variable
+
+```bash
+export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} ${FZF_THEME}"
+#To use the fzf theme the environment variables used have to be defined.
+#You can use the tmux or bash file to export them to your environment
 ```
 
 ## 👆 Acknowledgments
