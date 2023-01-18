@@ -230,6 +230,7 @@ require('lualine').setup {
 - **bash/zsh** color themes found on [extras](extras/bash)
 - **Windows Terminal** color themes found on [extras](extras/windows_terminal)
 - **fzf** color theme found on [extras](extras/fzf)
+- **XCode Colorscheme** color theme found on [jstheoriginal/gruvbox-theme-for-xcode](https://github.com/jstheoriginal/gruvbox-theme-for-xcode)
 
 #### add to Windows Terminal
 
@@ -255,3 +256,4 @@ export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} ${FZF_THEME}"
 - Shutout to @ThePrimeagen for the inspiration for the plugin name, Gruvbox baby!
 - I based my structure on https://github.com/folke/tokyonight.nvim (and also copied some of it)
 - The all father 👴 https://github.com/morhetz/gruvbox
+- To @jstheoriginal to make the theme available for 🍎 XCode
