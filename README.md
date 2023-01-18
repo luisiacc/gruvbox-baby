@@ -227,6 +227,7 @@ require('lualine').setup {
 
 - **iTerm2** color theme found on [extras](extras/iterm2)
 - **tmux** color themes found on [extras](extras/tmux)
+- **bash/zsh** color themes found on [extras](extras/bash)
 - **Windows Terminal** color themes found on [extras](extras/windows_terminal)
 
 #### add to Windows Terminal
