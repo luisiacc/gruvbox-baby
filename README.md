@@ -238,7 +238,7 @@ To add the gruvbox-baby themes to Windows Terminal run,
 
 ```bash
 extras/windows_terminal/add_themes_to_windows_terminal.py $PATH_TO_WINDOWS_TERMINAL_SETTINGS_JSON
-# Windows Terminal settings.json can be found at 
+# Windows Terminal settings.json can be found at
 # %LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 ```
 
@@ -256,4 +256,8 @@ export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} ${FZF_THEME}"
 - Shutout to @ThePrimeagen for the inspiration for the plugin name, Gruvbox baby!
 - I based my structure on https://github.com/folke/tokyonight.nvim (and also copied some of it)
 - The all father 👴 https://github.com/morhetz/gruvbox
-- To @adityadaniel to make the theme available for 🍎 XCode
+
+
+## Other themes I've made
+
+The Matrix - https://github.com/luisiacc/the-matrix.nvim
