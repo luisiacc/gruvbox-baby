@@ -3,7 +3,7 @@
 -- stylua: ignore
 local c = require("gruvbox-baby.colors").config()
 
-return {
+local M = {
   normal = {
     a = { bg = c.light_blue, fg = c.dark, gui = "bold" },
     b = { bg = c.background, fg = c.light_blue },
@@ -35,3 +35,7 @@ return {
     c = { bg = c.dark_gray, fg = c.gray },
   },
 }
+
+M.terminal = M.insert
+
+return M
