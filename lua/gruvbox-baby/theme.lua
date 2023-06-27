@@ -135,7 +135,7 @@ function M.setup(config)
     ["@text"] = { fg = c.soft_yellow },
     ["@text.strong"] = { fg = c.soft_yellow, style = "bold" },
     ["@text.emphasis"] = { fg = c.soft_yellow, style = "italic" },
-    ["@text.underline"] = { fg = c.soft_yellow },
+    ["@text.underline"] = { fg = c.soft_yellow, style = "underline" },
     ["@text.title"] = { fg = c.soft_yellow },
     ["@text.literal"] = { fg = c.soft_yellow },
     ["@uri"] = { fg = c.soft_yellow },
