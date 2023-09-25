@@ -14,6 +14,7 @@ function M.setup(config)
 
   local theme = {}
   theme.defer = {}
+  theme.term = c.term
   theme.base = {
     NormalFloat = { fg = c.foreground, bg = c.background_dark },
     Normal = { fg = c.foreground, bg = c.background },
@@ -460,6 +461,7 @@ function M.setup(config)
   end
 
   theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
+  theme.term = vim.tbl_extend("force", theme.term, config.term_highlights or {})
   return theme
 end
 

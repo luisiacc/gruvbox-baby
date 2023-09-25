@@ -124,6 +124,12 @@ function util.highlight(group, color)
   end
 end
 
+function util.highlight_term(colors)
+  for k, v in ipairs(colors) do
+    vim.g['terminal_color_' .. (k - 1)] = v
+  end
+end
+
 function util.syntax(syntax)
   for group, colors in pairs(syntax) do
     util.highlight(group, colors)
@@ -140,6 +146,8 @@ function util.load(theme)
   vim.g.colors_name = "gruvbox-baby"
   -- load base theme
   util.syntax(theme.base)
+  -- load term theme
+  util.highlight_term(theme.term)
 
   vim.defer_fn(function()
     util.syntax(theme.defer)
