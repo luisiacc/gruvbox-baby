@@ -322,6 +322,21 @@ function M.setup(config)
     NvimTreeGitNew = { fg = c.soft_green },
     NvimTreeGitDeleted = { fg = c.red },
 
+    -- NeoTree
+    NeoTreeNormal = { fg = c.foreground, bg = c.background_dark },
+    NeoTreeNormalNC = { fg = c.foreground, bg = c.background_dark },
+    NeoTreeVertSplit = { fg = c.background, bg = c.background },
+    NeoTreeWinSeparator = { fg = c.background, bg = c.background },
+    NeoTreeDirectoryIcon = { fg = c.soft_yellow },
+    NeoTreeRootName = { fg = c.magenta },
+    NeoTreeExecFile = { fg = c.light_blue, style = "NONE" },
+
+    NeoTreeGitUnstaged = { fg = c.red },
+    NeoTreeGitStaged = { fg = c.foreground },
+    NeoTreeGitModified = { fg = c.soft_yellow },
+    NeoTreeGitUnstracked = { fg = c.soft_green },
+    NeoTreeGitDeleted = { fg = c.red },
+
     -- Hop
     HopNextKey = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
     HopNextKey1 = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
