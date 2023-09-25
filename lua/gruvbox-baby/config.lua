@@ -22,6 +22,7 @@ config = {
   string_style = opt("string_style", "nocombine"),
   variable_style = opt("variable_style", "NONE"),
   highlights = opt("highlights", {}),
+  term_highlights = opt("term_highlights", {}),
   color_overrides = opt("color_overrides", {}),
   telescope_theme = opt("telescope_theme", false),
   transparent_mode = opt("transparent_mode", false),
