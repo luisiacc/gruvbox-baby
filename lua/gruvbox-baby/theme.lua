@@ -137,7 +137,7 @@ function M.setup(config)
     ["@text.strong"] = { fg = c.soft_yellow, style = "bold" },
     ["@text.emphasis"] = { fg = c.soft_yellow, style = "italic" },
     ["@text.underline"] = { fg = c.soft_yellow, style = "underline" },
-		["@text.strike"] = { fg = c.medium_gray, style = "strikethrough" },
+    ["@text.strike"] = { fg = c.medium_gray, style = "strikethrough" },
     ["@text.title"] = { fg = c.soft_yellow },
     ["@text.literal"] = { fg = c.soft_yellow },
     ["@uri"] = { fg = c.soft_yellow },
@@ -431,6 +431,16 @@ function M.setup(config)
     DashboardShortCut = { fg = c.light_blue },
     DashboardCenter = { fg = c.bright_yellow },
     DashboardFooter = { fg = c.blue_gray },
+
+    -- kkharji/lspsaga.nvim
+    DiagnosticError = { fg = c.red },
+    DiagnosticWarning = { fg = c.soft_yellow },
+    DiagnosticInformation = { fg = c.light_blue },
+    DiagnosticHint = { fg = c.dark_gray },
+    LspSagaDiagnosticBorder = { fg = c.milk },
+    LspSagaDiagnosticHeader = { fg = c.bright_yellow },
+    LspSagaDiagnosticTruncateLine = { fg = c.milk },
+    LspSagaRenameBoarder = { fg = c.blue_gray },
   }
 
   if config.telescope_theme then

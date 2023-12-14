@@ -125,6 +125,7 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 - https://github.com/hrsh7th/nvim-cmp
 - https://github.com/nvim-telescope/telescope.nvim
 - https://github.com/nvim-lualine/lualine.nvim
+- https://github.com/kkharji/lspsaga.nvim
 
 #### enable Lualine
 
